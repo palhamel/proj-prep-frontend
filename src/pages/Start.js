@@ -3,7 +3,9 @@ import React from 'react'
 export const Start = () => {
   return (
     <div>
-      Start
+      <h2>Start page</h2>
+      <p>..............</p>
+      
     </div>
   )
 }

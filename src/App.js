@@ -8,17 +8,29 @@ import { News } from 'pages/News'
 import { Prepping } from 'pages/Prepping'
 import { Weather } from 'pages/Weather'
 
-
 export const App = () => {
   return (
-    <main>
-      Get started in src/app.js!
-      <Nav />
-      <Start />
-      <Kits />
-      <News />
-      <Prepping />
-      <Weather />
-    </main>
+    <BrowserRouter>
+      <main>
+        <Nav />
+        <Switch>
+          <Route path="/" exact>
+            <Start />
+          </Route>
+          <Route path="/kits" exact>
+            <Kits />
+          </Route>
+          <Route path="/news" exact>
+            <News />
+          </Route>
+          <Route path="/prepping" exact>
+            <Prepping />
+          </Route>
+          <Route path="/weather" exact>
+            <Weather />
+          </Route>
+        </Switch>
+      </main>
+    </BrowserRouter>
   )
-}
+};

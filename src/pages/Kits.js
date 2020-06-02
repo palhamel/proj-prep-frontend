@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 export const Kits= () => {
   return (
     <div>
-      Kits
+      <h2>Kits Page</h2>
+      <p>..............</p>
+
     </div>
   )
 }

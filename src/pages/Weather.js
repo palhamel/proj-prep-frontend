@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 export const Weather = () => {
   return (
     <div>
-      Weather
+      <h2>Weather Page</h2>
+      <p>..............</p>
+
     </div>
   )
 }
