@@ -1,10 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 // import { Link } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 
 export const Nav = () => {
   return (
-    <nav>
+    <AppContainer>
       <h1><NavLink to="/">Logo here</NavLink></h1>
 
       <ul>
@@ -21,6 +22,14 @@ export const Nav = () => {
           <NavLink to="/weather">Weather</NavLink>
         </li>
       </ul>
-    </nav>
+    </AppContainer>
   );
 };
+
+// styled-components:
+const AppContainer = styled.main`
+  @media (min-width: 668px) {
+  width: 600px;
+  margin: 40px auto;
+  },
+`;
