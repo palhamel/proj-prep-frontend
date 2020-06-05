@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import styled from 'styled-components';
+
 // Navigation:
 import { Nav } from '../components/Nav'
 import { Footer } from '../components/Footer'
@@ -13,7 +15,7 @@ import { Weather } from './Weather'
 export const Home = () => {
   return (
     <BrowserRouter>
-      <main>
+      <AppContainer>
         <Nav />
         <Switch>
           <Route path="/" exact>
@@ -33,7 +35,16 @@ export const Home = () => {
           </Route>
         </Switch>
         <Footer />
-      </main>
+      </AppContainer>
     </BrowserRouter>
   )
 };
+
+// styled-components:
+const AppContainer = styled.main`
+  @media (min-width: 668px) {
+  width: 600px;
+  margin: 40px auto;
+  },
+`;
+

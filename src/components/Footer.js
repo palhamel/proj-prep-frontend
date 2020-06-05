@@ -1,9 +1,26 @@
 import React from 'react';
+import styled from 'styled-components'
+
+import { SocialFollow } from './Socials'
 
 export const Footer = () => {
   return (
-    <footer>
-      <h5>Here we can have some Footer info</h5>
-    </footer>
+    <Container>
+      <FooterText>Probably the best website in the world</FooterText>
+      <SocialFollow />
+    </Container>
   )
 }
+
+export const Container = styled.div`
+  text-align: center;
+  border-bottom: 1px solid #EBEEEF;
+  padding-top: 1px;
+`;
+ 
+export const FooterText = styled.h3`
+  font-weight: 100;
+  font-size: 10px;
+  color: #46539e;
+  opacity: 40%;
+`;
