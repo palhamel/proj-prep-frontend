@@ -13,12 +13,12 @@ export const Nav = () => {
       </ContainerRight>
 
       <ContainerLeft>
-        <LinkText>
-          <NavLink to="/kits"> Kits </NavLink>
-          <NavLink to="/news"> News </NavLink>
-          <NavLink to="/prepping"> Prepping </NavLink>
-          <NavLink to="/weather"> Weather </NavLink>
-        </LinkText>
+       
+          <NavLink to="/kits">Kits</NavLink>
+          <NavLink to="/news">News</NavLink>
+          <NavLink to="/prepping">Prepping</NavLink>
+          <NavLink to="/weather">Weather</NavLink>
+        
       </ContainerLeft>
 
     </Container>
@@ -66,7 +66,7 @@ const HeaderText = styled.p`
   },
 `;
 
-const LinkText = styled.a`
+/* const LinkText = styled.a`
   font-size: 18px;
   font-weight: 800;
   color: white;
@@ -76,4 +76,4 @@ const LinkText = styled.a`
   .active {
   color: rgb(189, 218, 0);
 }
-`;
+`; */

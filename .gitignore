@@ -25,3 +25,5 @@ yarn-error.log*
 .vscode
 
 TODO.md
+/temps
+apiKeys.*
