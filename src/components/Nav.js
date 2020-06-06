@@ -30,8 +30,8 @@ const Container = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #CBFF94; */
-  background-image: url(${bgImage});
+  background: rgb(242, 242, 242);
+  /* background-image: url(${bgImage}); */
   background-size: auto;
   padding: 20px;
   margin: 0;

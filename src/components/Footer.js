@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SocialFollow } from './Socials'
+import { SocialFollow } from './SocialFollow'
 
 export const Footer = () => {
   return (
@@ -16,6 +16,7 @@ export const Container = styled.div`
   text-align: center;
   border-bottom: 1px solid #EBEEEF;
   padding-top: 1px;
+  margin: 10px;
 `;
  
 export const FooterText = styled.h3`

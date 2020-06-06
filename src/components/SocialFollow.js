@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faYoutube, faFacebook, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
-
-
+// Css to styled comp
+import './socialfollow.css'
 // TODO: Break out to own FA component library
 
 export const SocialFollow = () => {
