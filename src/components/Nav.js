@@ -1,26 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 // import { Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
-import bgImage from '../images/bg_img-750x750.png'
+import bgImage from "../images/bg_img-750x750.png";
 
 export const Nav = () => {
   return (
     <Container>
       <ContainerRight>
-        <HeaderText><NavLink to="/">LOGO</NavLink></HeaderText>
+        <HeaderText>
+          <NavLink to="/">LOGO</NavLink>
+        </HeaderText>
       </ContainerRight>
 
       <ContainerLeft>
-       
-          <NavLink to="/kits">Kits</NavLink>
-          <NavLink to="/news">News</NavLink>
-          <NavLink to="/prepping">Prepping</NavLink>
-          <NavLink to="/weather">Weather</NavLink>
-        
+        <NavLink to="/prepping">Prepping</NavLink>
+        <NavLink to="/kits">Kits</NavLink>
+        <NavLink to="/news">News</NavLink>
+        <NavLink to="/weather">Weather</NavLink>
       </ContainerLeft>
-
     </Container>
   );
 };
