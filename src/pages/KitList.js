@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 
 import './kits_style.css'
 
 // List all posts from API:
-export const Kits = () => {
+export const KitList = () => {
   // URL to API as const:
   const apiURL = "http://localhost:8080/kits";
   const [kits, setKits] = useState([]);
+
   // Checking API via Fetch to setThoughts and then map the info:
   useEffect(() => {
     fetch(apiURL)
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((json) => setKits(json));
-  }, []);
+  }, [apiURL]);
   console.log(kits);
 
   return (
     <div className="kits-continer">
-      <h2>Kits Page</h2>
+      <h2>Kits List Page</h2>
       {kits.map((kit) => (
         <article className="kit-card" key={kit._id}>
-          <h3>{kit.name}</h3>
+          <Link to={`kits/${kit._id}`}>
+            <h3>{kit.name}</h3>
+          </Link>
           <h4>{kit.description}</h4>
           <h4>Innehåll i lådan:</h4>
           <h4>{kit.content}</h4>

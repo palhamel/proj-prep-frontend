@@ -7,10 +7,12 @@ import { Nav } from '../components/Nav'
 import { Footer } from '../components/Footer'
 // Pages:
 import { Start } from '../pages/Start'
-import { Kits } from './Kits'
+import { KitList } from './KitList'
 import { News } from './News'
 import { Prepping } from './Prepping'
 import { Weather } from './Weather'
+
+import { KitDetails } from './KitDetail'
 
 export const Home = () => {
   return (
@@ -22,8 +24,14 @@ export const Home = () => {
             <Start />
           </Route>
           <Route path="/kits" exact>
-            <Kits />
+            <KitList />
           </Route>
+          <Route path="/kits/:kitId" exact>
+            <KitDetails />
+          </Route>
+          {/* <Route path="/kits/:kitId" exact>
+            <KitDetails />
+          </Route> */}
           <Route path="/news" exact>
             <News />
           </Route>
