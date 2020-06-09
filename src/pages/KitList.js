@@ -19,7 +19,8 @@ export const KitList = () => {
 
   return (
     <div className="kits-continer">
-      <h2>Kits List Page [sort on:]</h2>
+      <h2>Kits List Page</h2>
+      <h4>[sort on:]</h4>
       {kits.map((kit) => (
         <article className="kit-card" key={kit._id}>
           <h3>{kit.name}</h3>

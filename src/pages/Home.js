@@ -8,7 +8,7 @@ import { Footer } from '../components/Footer'
 // Pages:
 import { Start } from '../pages/Start'
 import { KitList } from './KitList'
-import { News } from './News'
+import { NewsList } from './News'
 import { Prepping } from './Prepping'
 import { Weather } from './Weather'
 
@@ -30,7 +30,7 @@ export const Home = () => {
             <KitDetails />
           </Route>
           <Route path="/news" exact>
-            <News />
+            <NewsList />
           </Route>
           <Route path="/prepping" exact>
             <Prepping />
