@@ -19,19 +19,17 @@ export const KitList = () => {
 
   return (
     <div className="kits-continer">
-      <h2>Kits List Page</h2>
+      <h2>Kits List Page [sort on:]</h2>
       {kits.map((kit) => (
         <article className="kit-card" key={kit._id}>
-          <Link to={`kits/${kit._id}`}>
-            <h3>{kit.name}</h3>
-          </Link>
+          <h3>{kit.name}</h3>
           <h4>{kit.description}</h4>
-          <h4>Innehåll i lådan:</h4>
-          <h4>{kit.content}</h4>
-          <h4>Produkttyp:{kit.category}</h4>
+          <h4>Produkttyp:  {kit.category}</h4>
           <h4>För antal personer: {kit.for_persons}</h4>
           <h4>För antal dagar: {kit.for_days}</h4>
-          <h4>Antal kalorier/dag: {kit.nutrition_cal}</h4>
+          <Link to={`kit/${kit._id}`}>
+            <h4>Läs mer om innehållet</h4>
+          </Link>
         </article>
       ))}
     </div>

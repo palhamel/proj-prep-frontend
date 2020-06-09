@@ -26,12 +26,9 @@ export const Home = () => {
           <Route path="/kits" exact>
             <KitList />
           </Route>
-          <Route path="/kits/:kitId" exact>
+          <Route path="/kit/:kitId" exact>
             <KitDetails />
           </Route>
-          {/* <Route path="/kits/:kitId" exact>
-            <KitDetails />
-          </Route> */}
           <Route path="/news" exact>
             <News />
           </Route>
