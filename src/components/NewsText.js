@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 import "../pages/kits_style.css";
 
@@ -19,14 +19,14 @@ export const NewsText = () => {
 
   return (
     <div className="kits-continer">
-      <h2>News Page</h2>
-      <h4>(källa: SVT Text-TV API)</h4>
+      <h2>SVT Text-TV</h2>
       {news.map((kit) => (
         <article className="kit-card" key={kit.id}>
           {/* <h3>{kit.num}</h3> */}
           <h3>{kit.title}</h3>
           {/* <h4>Uppdaterat: {kit.date_updated_unix}</h4> */}
-          <h4>Uppdaterat: {moment(kit.date_updated_unix).toString()}</h4>
+          <h4>Publicerat: {dayjs.unix(kit.date_updated_unix).format('YYYY-MM-DD')}</h4>
+
           <h4>
             Läs mer: <a href={kit.permalink} target="_blank" rel="noopener noreferrer">extern länk</a>
           </h4>
@@ -35,20 +35,3 @@ export const NewsText = () => {
     </div>
   );
 };
-
-/*
-import React, { useState, useEffect } from "react";
-
-export const NewsList = () => {
-  return (
-    <div>
-      <h2>News Page</h2>
-      <p>..............</p>
-
-    </div>
-  )
-}
-
-
-
-*/

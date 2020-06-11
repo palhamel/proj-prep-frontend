@@ -21,10 +21,9 @@ export const NewsList = () => {
 
   return (
     <div className="kits-continer">
+      <h2>Nyheter Lista</h2>
       <NewsWho />
       <NewsText />
-      <h2>News Page</h2>
-      <h4>(källa: SVT Text-TV API)</h4>
     </div>
   );
 };
