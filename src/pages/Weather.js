@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import WeatherComp from '../components/WeatherComp'
 // import moment from 'moment'
 import { SmhiMessage } from '../components/SmhiMessage'
+import { SmhiAlerts } from '../components/SmhiAlerts'
 import { CovidStats } from '../components/CovidStats'
 import dayjs from 'dayjs'
 import { openWeatherApiKey } from "../apiKeys";
@@ -32,6 +33,7 @@ export const Weather = () => {
         <h4>{weatherDay.timezone}</h4>
         <h4>{dayjs.unix(weatherDay.dt).format('YYYY-MM-DD kl: hh:mm')}</h4>
       </article>
+    <SmhiAlerts />
     <CovidStats />
     <SmhiMessage />
     </div>
