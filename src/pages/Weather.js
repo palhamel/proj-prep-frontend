@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 // import WeatherComp from '../components/WeatherComp'
 // import moment from 'moment'
-
+import { SmhiMessage } from '../components/SmhiMessage'
+import { CovidStats } from '../components/CovidStats'
+import dayjs from 'dayjs'
 import { openWeatherApiKey } from "../apiKeys";
 
 export const Weather = () => {
@@ -18,7 +20,7 @@ export const Weather = () => {
       .then((res) => res.json())
       .then((json) => setweatherDay(json));
   }, [weatherOneDayApi]);
-  console.log(weatherDay);
+  console.log('check weatherday', weatherDay.main);
 
   return (
     <div>
@@ -26,32 +28,31 @@ export const Weather = () => {
       <article className="kit-card">
         <p>Vädret idag i:</p>
         <h4>{weatherDay.name}</h4>
+
         <h4>{weatherDay.timezone}</h4>
-        <h4>{weatherDay.dt}</h4>
+        <h4>{dayjs.unix(weatherDay.dt).format('YYYY-MM-DD kl: hh:mm')}</h4>
       </article>
+    <CovidStats />
+    <SmhiMessage />
     </div>
   );
 };
 
 /*
-    console.log("checking first json", json); // checking the json from open weather
-      console.log("city:", json.name)
-      console.log("temp:", json.main.temp)
-      console.log("wind:", json.wind)
-    */
-
-/*
   return (
     <div>
       <h2>Weather Page</h2>
-      <article className="kit-card" >
+      <article className="kit-card">
         <p>Vädret idag i:</p>
-        <h3>{weatherDay.name}</h3>
-        <h3>{weatherDay.timezone}</h3>
-
+        <h4>{weatherDay.name}</h4>
+        <h4>{weatherDay.timezone}</h4>
+        <h4>{dayjs.unix(weatherDay.dt).format('YYYY-MM-DD kl: hh:mm:ss')}</h4>
       </article>
     </div>
   );
-}
+};
+
+
+
 
 */
