@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import moment from 'moment'
 
-import "./kits_style.css";
+import "../pages/kits_style.css";
 
 // List all posts from API:
-export const NewsList = () => {
+export const NewsText = () => {
   // URL to API as const:
   const apiURL = "http://api.texttv.nu/api/get/108-112?app=apiexempelsidan";
   const [news, setNews] = useState([]);

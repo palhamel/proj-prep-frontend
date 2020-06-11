@@ -8,7 +8,7 @@ import { Footer } from '../components/Footer'
 // Pages:
 import { Start } from '../pages/Start'
 import { KitList } from './KitList'
-import { NewsList } from './News'
+import { NewsList } from './NewsList'
 import { Prepping } from './Prepping'
 import { Weather } from './Weather'
 
