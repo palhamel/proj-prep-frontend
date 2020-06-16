@@ -10,7 +10,7 @@ import { Start } from '../pages/Start'
 import { KitList } from './KitList'
 import { NewsList } from './NewsList'
 import { Prepping } from './Prepping'
-import { Weather } from './Weather'
+import { Smhi } from './Smhi'
 
 import { KitDetails } from './KitDetail'
 
@@ -35,8 +35,8 @@ export const Home = () => {
           <Route path="/prepping" exact>
             <Prepping />
           </Route>
-          <Route path="/weather" exact>
-            <Weather />
+          <Route path="/smhi" exact>
+            <Smhi />
           </Route>
         </Switch>
         <Footer />

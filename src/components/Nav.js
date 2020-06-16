@@ -17,8 +17,8 @@ export const Nav = () => {
       <ContainerLeft>
         <NavLink to="/prepping">Prepping</NavLink>
         <NavLink to="/kits">Kits</NavLink>
-        <NavLink to="/news">News</NavLink>
-        <NavLink to="/weather">Weather</NavLink>
+        <NavLink to="/news">Nyheter</NavLink>
+        <NavLink to="/smhi">SMHI</NavLink>
       </ContainerLeft>
     </Container>
   );
