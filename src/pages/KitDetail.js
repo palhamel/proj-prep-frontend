@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { ButtonBack} from '../components/ButtonBack'
+import { ButtonBack } from "../components/ButtonBack";
+
+import styled from "styled-components";
+
 
 import "./kits_style.css";
 
@@ -29,14 +32,17 @@ export const KitDetails = () => {
         <h4>För antal personer: {kitDetail.for_persons}</h4>
         <h4>För antal dagar: {kitDetail.for_days}</h4>
         <h4>Pris: {kitDetail.average_cost},-</h4>
-        <h4>En länk där</h4>
+        <h4>
+          <button type="button">Köp här via Crisec</button>
+        </h4>
         <h4>En bild här</h4>
-
 
         <ButtonBack />
       </article>
     </div>
   );
 };
-
-// Show details in kit:
+// styled-components:
+ const BuyButton = styled.button`
+ 
+ `;

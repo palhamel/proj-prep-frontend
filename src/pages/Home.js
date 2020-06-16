@@ -10,6 +10,7 @@ import { Start } from '../pages/Start'
 import { KitList } from './KitList'
 import { NewsList } from './NewsList'
 import { Prepping } from './Prepping'
+import { WhoInfo } from "./WhoInfo";
 import { Smhi } from './Smhi'
 
 import { KitDetails } from './KitDetail'
@@ -34,6 +35,9 @@ export const Home = () => {
           </Route>
           <Route path="/prepping" exact>
             <Prepping />
+          </Route>
+          <Route path="/who" exact>
+            <WhoInfo />
           </Route>
           <Route path="/smhi" exact>
             <Smhi />

@@ -24,13 +24,6 @@ export const SmhiMessage = () => {
         <h4>{dayjs(smhi.time_stamp).format("YYYY-MM-DD kl: hh:mm")}</h4>
         <h4>{smhi.text}</h4>
       </article>
-
-      {/*       {news.slice(0, 5).map((news) => (
-        <article className="kit-card" key={news.pubDate}>
-          <h4>{dayjs(news.pubDate).format('YYYY-MM-DD')}</h4>
-          <a href={news.link} target="_blank" rel="noopener noreferrer"><h3>{news.title}</h3></a>
-        </article>
-      ))} */}
     </div>
   );
 };

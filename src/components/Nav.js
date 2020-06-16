@@ -19,6 +19,7 @@ export const Nav = () => {
         <NavLink to="/kits">Kits</NavLink>
         <NavLink to="/news">Nyheter</NavLink>
         <NavLink to="/smhi">SMHI</NavLink>
+        <NavLink to="/who">WHO</NavLink>
       </ContainerLeft>
     </Container>
   );

@@ -8,6 +8,10 @@ export const CovidStats = () => {
   const apiURL =
     "https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats";
   const [covidStats, setCovidStats] = useState([]);
+/* 
+  const stringDate = covidStats.last_update;
+  const maxStringLenght = stringDate;
+  console.log('check const', maxStringLenght) */
 
   // Checking API via Fetch to setThoughts and then map the info:
   useEffect(() => {
@@ -15,27 +19,18 @@ export const CovidStats = () => {
       .then((res) => res.json())
       .then((json) => setCovidStats(json.data));
   }, [apiURL]);
-  // console.log('covidStats:', covidStats);
+  console.log("covidStats:", covidStats);
 
   return (
     <div>
-      <h3>Covid Stats:</h3>
+      <h3>Covid-19 statistik - rapporterat:</h3>
       <article className="kit-card">
-        <h4>{covidStats.last_update}</h4>
-        {/* <h4>{dayjs(covidStats.last_update).format('YYYY')}</h4> */}
-        <h4>currently_infected: {covidStats.currently_infected}</h4>
-        <h4>death_cases: {covidStats.death_cases}</h4>
-        <h4>recovery_cases: {covidStats.recovery_cases}</h4>
-        <h4>{covidStats.text}</h4>
-        <p>Kan man visualisera?</p>
+        <h4>Currently infected: {covidStats.currently_infected}</h4>
+        <h4>Recovery cases: {covidStats.recovery_cases}</h4>
+        <h4>Total cases: {covidStats.total_cases}</h4>
+        <h4>Death cases: {covidStats.death_cases}</h4>
+        <h4>Last update: {covidStats.last_update}</h4>
       </article>
-
-      {/*       {news.slice(0, 5).map((news) => (
-        <article className="kit-card" key={news.pubDate}>
-          <h4>{dayjs(news.pubDate).format('YYYY-MM-DD')}</h4>
-          <a href={news.link} target="_blank" rel="noopener noreferrer"><h3>{news.title}</h3></a>
-        </article>
-      ))} */}
     </div>
   );
 };

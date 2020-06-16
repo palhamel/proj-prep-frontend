@@ -18,7 +18,8 @@ export const NewsWho = () => {
 
   return (
     <div>
-      <h2>WHO</h2>
+      {/* <h2>WHO</h2> */}
+      <h3>WHO - senaste uppdateringarna:</h3>
       {news.slice(0, 5).map((news) => (
         <article className="kit-card" key={news.pubDate}>
           <h4>{dayjs(news.pubDate).format('YYYY-MM-DD')}</h4>
