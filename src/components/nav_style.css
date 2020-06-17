@@ -1,7 +1,45 @@
 
+.logo-image {
+  width: 100px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (min-width: 668px) {
+
+  .logo-image {
+    width: 200px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+
+}
 
 
 
-nav {
-  background-color: aqua;
+@media (min-width: 900px) {
+
+  .logo-image {
+    width: 240px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 5px;
+  }
+
 }

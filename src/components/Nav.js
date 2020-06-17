@@ -1,25 +1,32 @@
 import React from "react";
 import styled from "styled-components";
-// import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-import bgImage from "../images/bg_img-750x750.png";
+import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+
+import bgImage from "../images/bg_img-1440x400.png";
+import logo from "../images/Prepper_Stash_vit.png";
+
+import "../components/nav_style.css";
 
 export const Nav = () => {
   return (
     <Container>
       <ContainerRight>
-        <HeaderText>
-          <NavLink to="/">LOGO</NavLink>
-        </HeaderText>
+        <img className="logo-image" src={logo} alt="Logo" />
+        {/* <Logo /> */}
+        <HeaderText>{/* <Link to="/">LOGO</Link> */}</HeaderText>
       </ContainerRight>
 
       <ContainerLeft>
-        <NavLink to="/prepping">Prepping</NavLink>
-        <NavLink to="/kits">Kits</NavLink>
-        <NavLink to="/news">Nyheter</NavLink>
-        <NavLink to="/smhi">SMHI</NavLink>
-        <NavLink to="/who">WHO</NavLink>
+        <HeaderText>
+          <Link to="/">Start </Link>
+          <Link to="/prepping">Prepping </Link>
+          <Link to="/kits">Kits </Link>
+          <Link to="/news">Nyheter </Link>
+          <Link to="/smhi">SMHI </Link>
+          <Link to="/who">WHO </Link>
+        </HeaderText>
       </ContainerLeft>
     </Container>
   );
@@ -30,14 +37,14 @@ const Container = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(242, 242, 242);
-  /* background-image: url(${bgImage}); */
-  background-size: auto;
+  background-image: url(${bgImage});
+  /* background: #708A53; */
+  /* background-size: 600px, 300px; */
   padding: 20px;
   margin: 0;
   height: 80px;
   @media (min-width: 668px) {
-    height: 120px;
+    height: 200px;
   },
 `;
 const ContainerRight = styled.section`
@@ -56,24 +63,9 @@ const ContainerLeft = styled.section`
   width: auto;
 `;
 
-const HeaderText = styled.p`
-  font-size: 28px;
-  font-weight: 800;
-  color: #efebe9;
+const HeaderText = styled.section`
   margin: 0px 0px 5px 0px;
   @media (min-width: 668px) {
     font-size: 34px;
   },
 `;
-
-/* const LinkText = styled.a`
-  font-size: 18px;
-  font-weight: 800;
-  color: white;
-  margin: 0;
-  text-decoration: none;
-
-  .active {
-  color: rgb(189, 218, 0);
-}
-`; */

@@ -1,19 +1,19 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import styled from 'styled-components';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import styled from "styled-components";
 
 // Navigation:
-import { Nav } from '../components/Nav'
-import { Footer } from '../components/Footer'
+import { Nav } from "../components/Nav";
+import { Footer } from "../components/Footer";
 // Pages:
-import { Start } from '../pages/Start'
-import { KitList } from './KitList'
-import { NewsList } from './NewsList'
-import { Prepping } from './Prepping'
+import { Start } from "../pages/Start";
+import { KitList } from "./KitList";
+import { NewsList } from "./NewsList";
+import { Prepping } from "./Prepping";
 import { WhoInfo } from "./WhoInfo";
-import { Smhi } from './Smhi'
+import { Smhi } from "./Smhi";
 
-import { KitDetails } from './KitDetail'
+import { KitDetails } from "./KitDetail";
 
 export const Home = () => {
   return (
@@ -46,14 +46,19 @@ export const Home = () => {
         <Footer />
       </AppContainer>
     </BrowserRouter>
-  )
+  );
 };
 
 // styled-components:
 const AppContainer = styled.main`
   @media (min-width: 668px) {
-  width: 600px;
-  margin: 40px auto;
-  },
-`;
+  width: auto;
+  margin: 0px auto;
+  }
 
+
+  @media (min-width: 900px) {
+  max-width: auto;
+  margin: 0px auto;
+  }
+`;
