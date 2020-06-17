@@ -1,8 +1,8 @@
 
-
 .social-container {
-  background: rgb(242, 242, 242);
+  background: rgb(255, 255, 255);
   padding: 25px 50px;
+  
 }
 a.social {
   margin: 0 1rem;
@@ -16,16 +16,24 @@ a.social:hover {
 
 a.youtube {
   color: #404e59;
+  border-bottom: 0px;
+
 }
 
 a.facebook {
   color: #404e59;
+  border-bottom: 0px;
+
 }
 
 a.twitter {
   color: #404e59;
+  border-bottom: 0px;
+
 }
 
 a.instagram {
   color: #404e59;
+  border-bottom: 0px;
+
 }

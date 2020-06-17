@@ -52,7 +52,7 @@ export const Home = () => {
 // styled-components:
 const AppContainer = styled.main`
   @media (min-width: 668px) {
-  width: auto;
+  max-width: 900px;
   margin: 0px auto;
   }
 

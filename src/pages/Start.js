@@ -3,7 +3,7 @@ import React from "react";
 export const Start = () => {
   return (
     <div>
-      <h2>Start page</h2>
+      <h2>Varför prepping? (Start page)</h2>
       <p>
         Förberedd för oväder och strömavbrott! Människan blir mer och mer utsatt
         och sårbar i samhället, den moderna infrastrukturen och teknikens

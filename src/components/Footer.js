@@ -24,4 +24,5 @@ export const FooterText = styled.h3`
   font-size: 10px;
   color: #46539e;
   opacity: 40%;
+
 `;

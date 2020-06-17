@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
 // import { NavLink } from "react-router-dom";
-
 import bgImage from "../images/bg_img-1440x400.png";
 import logo from "../images/Prepper_Stash_vit.png";
-
 import "../components/nav_style.css";
 
 export const Nav = () => {
@@ -15,10 +12,17 @@ export const Nav = () => {
       <ContainerRight>
         <img className="logo-image" src={logo} alt="Logo" />
         {/* <Logo /> */}
-        <HeaderText>{/* <Link to="/">LOGO</Link> */}</HeaderText>
+        {/*         <HeaderText>
+          <Link to="/">LOGO</Link>
+        </HeaderText> */}
       </ContainerRight>
 
       <ContainerLeft>
+        <SloganTextContainer>
+          <p className="slogan-text">
+            "Change the way you live, closer to nature."
+          </p>
+        </SloganTextContainer>
         <HeaderText>
           <Link to="/">Start </Link>
           <Link to="/prepping">Prepping </Link>
@@ -45,13 +49,19 @@ const Container = styled.section`
   height: 80px;
   @media (min-width: 668px) {
     height: 200px;
-  },
+  }
+  /* @media (min-width: 900px) {
+    flex-direction: column;
+  } */
 `;
 const ContainerRight = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  @media (min-width: 900px) {
+    margin-left: 50px;
+  }
 `;
 
 const ContainerLeft = styled.section`
@@ -61,6 +71,10 @@ const ContainerLeft = styled.section`
   align-items: flex-start;
   /* height: 120px; */
   width: auto;
+  @media (min-width: 900px) {
+    margin-right: 40px;
+    margin-top: 50px;
+  }
 `;
 
 const HeaderText = styled.section`
@@ -68,4 +82,17 @@ const HeaderText = styled.section`
   @media (min-width: 668px) {
     font-size: 34px;
   },
+`;
+
+const SloganTextContainer = styled.section`
+  margin: 0px 0px 40px 0px;
+  width: 350px;
+  color: white;
+  visibility: hidden;
+  height: 0px;
+  @media (min-width: 900px) {
+    visibility: visible;
+    padding-left: 30px;
+    height: 80px;
+  }
 `;

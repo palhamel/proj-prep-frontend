@@ -9,6 +9,29 @@ a {
   font-size: 14px;
   font-weight: 400;
   margin: 0px 5px;
+  border-bottom: 1px solid rgb(101, 218, 187);  
+}
+a:hover {
+  /* background-color: yellow; */
+  border-bottom: 5px solid rgb(101, 218, 187);
+}
+
+h3 {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.slogan-text {
+  color: rgb(255, 255, 255);
+  font-family: 'Cabin Sketch', cursive;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 700;
+  display: true;
+  margin: 0px;
 }
 
 @media (min-width: 668px) {
@@ -22,6 +45,12 @@ a {
     font-size: 20px;
     font-weight: 400;
     margin: 0px 5px;
+    border-bottom: 2px solid rgb(101, 218, 187);
+
+  }
+  a:hover {
+    /* background-color: yellow; */
+    border-bottom: 7px solid rgb(101, 218, 187);
   }
 
 }
@@ -38,8 +67,12 @@ a {
     color: white;
     text-decoration: none;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0px 5px;
+    border-bottom: 3px solid rgb(101, 218, 187);
+
   }
+
+
 
 }
