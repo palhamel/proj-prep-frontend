@@ -69,8 +69,13 @@ h3 {
     font-size: 24px;
     font-weight: 400;
     margin: 0px 5px;
-    border-bottom: 3px solid rgb(101, 218, 187);
-
+    border-bottom: 2px solid rgb(101, 218, 187);
+    
+  }
+  a:hover {
+    /* background-color: yellow; */
+    border-bottom: 7px solid rgb(218, 128, 101);
+    transition: all ease-in-out 250ms;
   }
 
 
