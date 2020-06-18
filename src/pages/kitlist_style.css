@@ -1,0 +1,91 @@
+.kits-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kit-card {
+  border: 1px solid rgb(182, 182, 182);
+  /* box-shadow: 6px 8px #000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 0px 10px 0px;
+  padding: 20px 25px;
+  width: 95%;
+  max-width: 500px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* typography
+=================== */
+.kit-name {
+  font-family: 'Cabin Sketch', sans-serif;
+  font-size: 24px;
+  margin: 0px 0px 5px 0px;
+}
+.kit-description {
+  font-size: 20px;
+  margin: 10px 0px 5px 0px;
+}
+
+.kit-details {
+  font-size: 16px;
+  margin: 0px 0px 2px 0px;
+}
+
+.kit-link {
+  margin: 0px;
+}
+
+a.kit-link {
+  border-bottom: none;
+}
+
+button {
+  padding: 5px;
+  margin: 10px 0px 5px 0px;
+  
+
+}
+
+/* kit-card effect drop shadow
+=================== */
+ .effect2
+ {
+   position: relative;
+ }
+ .effect2:before, .effect2:after
+ {
+   z-index: -1;
+   position: absolute;
+   content: "";
+   bottom: 15px;
+   left: 10px;
+   width: 50%;
+   top: 80%;
+   max-width:300px;
+   background: #777;
+   -webkit-box-shadow: 0 15px 10px #777;
+   -moz-box-shadow: 0 15px 10px #777;
+   box-shadow: 0 15px 10px #777;
+   -webkit-transform: rotate(-3deg);
+   -moz-transform: rotate(-3deg);
+   -o-transform: rotate(-3deg);
+   -ms-transform: rotate(-3deg);
+   transform: rotate(-3deg);
+ }
+ .effect2:after
+ {
+   -webkit-transform: rotate(3deg);
+   -moz-transform: rotate(3deg);
+   -o-transform: rotate(3deg);
+   -ms-transform: rotate(3deg);
+   transform: rotate(3deg);
+   right: 10px;
+   left: auto;
+ }
+ 

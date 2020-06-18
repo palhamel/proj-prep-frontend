@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
-import "../pages/kits_style.css";
+// import "./kitlist_style.css";
 
 // List all posts from API:
 export const SmhiAlerts = () => {

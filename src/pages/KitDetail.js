@@ -5,7 +5,7 @@ import { ButtonBack } from "../components/ButtonBack";
 import styled from "styled-components";
 // import { Button, Card } from "react-bootstrap";
 
-import "./kits_style.css";
+// import "./kits_style.css";
 
 export const KitDetails = () => {
   const { kitId } = useParams();

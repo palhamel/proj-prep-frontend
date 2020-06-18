@@ -1,7 +1,7 @@
 import React from "react";
 // import dayjs from 'dayjs'
 
-import "../pages/start_style.css";
+// import "./start_style.css";
 
 export const Start = () => {
   return (
@@ -11,12 +11,13 @@ export const Start = () => {
           Local Date Here
         </time> */}
 
-        <h2>Varför prepping? (Start page)</h2>
-        <p>Förberedd för oväder och strömavbrott! </p>
+        <h2>Förberedd för oväder och strömavbrott! </h2>
         <p>
           Människan blir mer och mer utsatt och sårbar i samhället, den moderna
           infrastrukturen och teknikens framfart gör oss mer och mer beroende.
-          <span className="text-highlight">Vad händer när vi blir strömlösa, insnöade eller översvämmade?</span>
+          <span className="text-highlight">
+            Vad händer när vi blir strömlösa, insnöade eller översvämmade?
+          </span>
         </p>
 
         <section className="text-box-focus">

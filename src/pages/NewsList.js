@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./kits_style.css";
+// import "./kits_style.css";
 
 // import { NewsWho } from '../components/NewsWho'
 import { NewsText } from '../components/NewsText'
