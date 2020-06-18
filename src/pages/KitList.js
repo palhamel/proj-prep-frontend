@@ -20,12 +20,12 @@ export const KitList = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Kits List Page</h2>
+        <h2>Krislådor</h2>
         <p>
           Att ha en krislåda hemma för sin hemberedskap är viktigt för att kunna
           möta eventuella krissituationer eller andra störningar som kan uppstå.
-          Det kan vara allt från strömavbrott till att vattnet slutar rinna ur
-          kranen eller att det blivit förorenat.
+          Det kan vara allt <span className="text-highlight" >från strömavbrott till att vattnet slutar rinna ur
+          kranen</span> eller att det blivit förorenat.
         </p>
         <h4>[sort on: MAT / UTRUSTNING]</h4>
         <div className="kits-container">
@@ -40,9 +40,15 @@ export const KitList = () => {
                 <p className="kit-details">För antal dagar: {kit.for_days}</p>
                 <p className="kit-details">Typ: {kit.category}</p>
               </section>
-              <Link className="kit-link" to={`kit/${kit._id}#top`}>
+              <Link className="kit-link" to={`kit/${kit._id}`}>
                 <button>Läs mer om innehållet här</button>
               </Link>
+              <a
+              className="btn kit-link"
+              href="https://criseq.se/produkt-kategori/beredskapslada-krislada/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >Vad lådan innehåller</a>
             </article>
           ))}
         </div>

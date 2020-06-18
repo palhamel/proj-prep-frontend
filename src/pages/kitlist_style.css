@@ -24,11 +24,16 @@
 =================== */
 .kit-name {
   font-family: 'Cabin Sketch', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
   margin: 0px 0px 5px 0px;
 }
 .kit-description {
   font-size: 20px;
+  margin: 10px 0px 5px 0px;
+}
+.kit-description-details {
+  font-size: 16px;
   margin: 10px 0px 5px 0px;
 }
 
@@ -48,8 +53,6 @@ a.kit-link {
 button {
   padding: 5px;
   margin: 10px 0px 5px 0px;
-  
-
 }
 
 /* kit-card effect drop shadow
@@ -89,3 +92,38 @@ button {
    left: auto;
  }
  
+/* button style
+=================== */
+.btn {
+  background: #afb8aa;
+  background-image: -webkit-linear-gradient(top, #afb8aa, #89968c);
+  background-image: -moz-linear-gradient(top, #afb8aa, #89968c);
+  background-image: -ms-linear-gradient(top, #afb8aa, #89968c);
+  background-image: -o-linear-gradient(top, #afb8aa, #89968c);
+  background-image: linear-gradient(to bottom, #afb8aa, #89968c);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+  width: 150px;
+  height: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 0px 10px 15px;
+  margin-top: 8px;
+  
+}
+
+.btn:hover {
+  background: #afb8aa;
+  background-image: -webkit-linear-gradient(top, #afb8aa, #415e47);
+  background-image: -moz-linear-gradient(top, #afb8aa, #415e47);
+  background-image: -ms-linear-gradient(top, #afb8aa, #415e47);
+  background-image: -o-linear-gradient(top, #afb8aa, #415e47);
+  background-image: linear-gradient(to bottom, #afb8aa, #415e47);
+  text-decoration: none;
+}

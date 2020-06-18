@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const ButtonBack = () => {
   return (
-    <section className="back-button-wrapper">
+    <section >
       <Link to="/kits">
         <div
           className="back-button"
