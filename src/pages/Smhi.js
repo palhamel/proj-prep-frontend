@@ -9,8 +9,8 @@ export const Smhi = () => {
   return (
     <div>
       <section className="container-page">
-        <div className="kits-continer">
-          <h2>SMHI Page</h2>
+        <h2>SMHI Page</h2>
+        <div className="kits-container">
           {/* <WeatherComp /> */}
           <SmhiMessage />
           <SmhiAlerts />

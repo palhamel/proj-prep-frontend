@@ -23,10 +23,11 @@ export const NewsText = () => {
     <div className="kits-container">
       {/* <h2>SVT Text-TV</h2> */}
       {news.map((news) => (
+        
         <article className="kit-card effect2" key={news.id}>
-            <p className="kit-details">
-              {dayjs.unix(news.date_updated_unix).format("YYYY-MM-DD")}
-            </p>
+          <p className="kit-details">
+            {dayjs.unix(news.date_updated_unix).format("YYYY-MM-DD")}
+          </p>
           <p className="kit-description text-highlight">{news.title}</p>
           <section>
             <a

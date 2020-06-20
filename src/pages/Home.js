@@ -12,6 +12,7 @@ import { NewsList } from "./NewsList";
 import { Prepping } from "./Prepping";
 import { WhoInfo } from "./WhoInfo";
 import { Smhi } from "./Smhi";
+import { Covid19apiAll } from "../components/Covid19apiAll";
 
 import { KitDetails } from "./KitDetail";
 
@@ -42,6 +43,9 @@ export const Home = () => {
           <Route path="/smhi" exact>
             <Smhi />
           </Route>
+          <Route path="/worldstat" exact>
+            <Covid19apiAll />
+          </Route>
         </Switch>
         <Footer />
       </AppContainer>
@@ -52,13 +56,12 @@ export const Home = () => {
 // styled-components:
 const AppContainer = styled.main`
   @media (min-width: 668px) {
-  max-width: 900px;
-  margin: 0px auto;
+    max-width: 900px;
+    margin: 0px auto;
   }
 
-
   @media (min-width: 900px) {
-  max-width: auto;
-  margin: 0px auto;
+    max-width: auto;
+    margin: 0px auto;
   }
 `;
