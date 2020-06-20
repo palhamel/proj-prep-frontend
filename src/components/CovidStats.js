@@ -25,13 +25,13 @@ export const CovidStats = () => {
   return (
     <div className="kits-container">
       <h1>Covid-19 statistik: </h1>
-      <h4> Globalt & bekräftade fall</h4>
+      <p> Globalt & bekräftade fall</p>
       <article className="kit-card effect2">
-        <p className="kit-description" >Currently infected: {covidStats.currently_infected}</p>
+        <p className="kit-details" >Currently infected: {covidStats.currently_infected}</p>
         <p className="kit-details">Recovery cases: {covidStats.recovery_cases}</p>
         <p className="kit-details">Total cases: {covidStats.total_cases}</p>
         <p className="kit-details">Death cases: {covidStats.death_cases}</p>
-        <p className="kit-details">Last update: {covidStats.last_update}</p>
+        {/* <p className="kit-details">Last update: {covidStats.last_update}</p> */}
       </article>
     </div>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import "./kitlist_style.css";
 
 import { NewsText } from "../components/NewsText";
+import { NewsWorld } from "../components/NewsWorld";
 
 // List all posts from API:
 export const NewsList = () => {
@@ -42,6 +43,7 @@ export const NewsList = () => {
             okända.
           </p>
           <NewsText />
+          <NewsWorld />
         </div>
       </section>
     </div>

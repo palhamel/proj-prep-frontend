@@ -25,23 +25,10 @@ export const WhoInfo = () => {
               Efter fågelinfluensan H5N1 utbrott 2005 införde WHO en
               bedömingslista i sex faser över en sjukdoms spridningsrisk.{" "}
             </span>
-            Det betyder dels att förstå att vissa källor har högre trovärdighet
-            än andra, dels att vara medveten om att avsändare av information har
-            ett syfte. Varför finns informationen?{" "}
-            <span className="text-highlight">
-              Vem tjänar på att informationen sprids?
-            </span>
-            Har den utformats för att få människor att agera på ett visst sätt?
           </p>
           <p>
-            I allmänhet litar vi på våra vänner.{" "}
-            <span className="text-highlight">
-              Att dela information som inte är sann i sociala medier sprider
-              inte bara osanningen vidare, det ger dessutom informationen tyngd
-              genom att det är en vän som vidarebefordrar den.
-            </span>{" "}
-            Det är lättare att vara kritisk mot information som sprids av
-            okända.
+            Den 30 januari 2020, deklarerade WHO coronavirusutbrottet 2019–2020
+            som internationellt hälsonödläge.
           </p>
           <CovidStats />
           {/* <Covid19api /> */}

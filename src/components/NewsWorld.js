@@ -5,37 +5,39 @@ import dayjs from "dayjs";
 
 import "../pages/kitlist_style.css";
 
+import { newsApiKey } from "../apiKeys";
+
 // List all posts from API:
-export const NewsText = () => {
+export const NewsWorld = () => {
   // URL to API as const:
-  const apiURL = "http://api.texttv.nu/api/get/108-112?app=apiexempelsidan";
+  const apiURL = `https://newsapi.org/v2/everything?q=COVID&sortBy=publishedAt&apiKey=${newsApiKey}&pageSize=5&page=1&sources=bbc-news&language=en`;
   const [news, setNews] = useState([]);
 
   // Checking API via Fetch and then map the info:
   useEffect(() => {
     fetch(apiURL)
       .then((res) => res.json())
-      .then((json) => setNews(json));
+      .then((json) => setNews(json.articles));
   }, [apiURL]);
-  console.log(news);
+  console.log("News API:", news);
 
   return (
     <div className="kits-container">
-      {/* <h2>SVT Text-TV</h2> */}
+      <h2>BBC NEWS, ämnessökning på "Covid"</h2>
       {news.map((news) => (
-        <article className="kit-card effect2" key={news.id}>
+        <article className="kit-card effect2" key={news.publishedAt}>
           <p className="kit-details">
-            {dayjs.unix(news.date_updated_unix).format("YYYY-MM-DD")}
+            {dayjs(news.publishedAt).format("YYYY-MM-DD, HH:MM")}
           </p>
           <p className="kit-description text-highlight">{news.title}</p>
           <section>
             <a
               className="news-link kit-link"
-              href={news.permalink}
+              href={news.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Läs mer - (extern länk, SVT Text)
+              Läs mer - (extern länk, BBC News)
             </a>
           </section>
         </article>
