@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import dayjs from 'dayjs'
+import dayjs from "dayjs";
 
-// import "../kitlist_style.css";
+// import { Link } from "react-router-dom";
+
+import "../pages/kitlist_style.css";
 
 // List all posts from API:
 export const NewsText = () => {
@@ -9,7 +11,7 @@ export const NewsText = () => {
   const apiURL = "http://api.texttv.nu/api/get/108-112?app=apiexempelsidan";
   const [news, setNews] = useState([]);
 
-  // Checking API via Fetch to setThoughts and then map the info:
+  // Checking API via Fetch and then map the info:
   useEffect(() => {
     fetch(apiURL)
       .then((res) => res.json())
@@ -18,18 +20,24 @@ export const NewsText = () => {
   console.log(news);
 
   return (
-    <div className="kits-continer">
-      <h2>SVT Text-TV</h2>
-      {news.map((kit) => (
-        <article className="kit-card" key={kit.id}>
-          {/* <h3>{kit.num}</h3> */}
-          <h3>{kit.title}</h3>
-          {/* <h4>Uppdaterat: {kit.date_updated_unix}</h4> */}
-          <h4>Publicerat: {dayjs.unix(kit.date_updated_unix).format('YYYY-MM-DD')}</h4>
-
-          <h4>
-            Läs mer: <a href={kit.permalink} target="_blank" rel="noopener noreferrer">extern länk</a>
-          </h4>
+    <div className="kits-container">
+      {/* <h2>SVT Text-TV</h2> */}
+      {news.map((news) => (
+        <article className="kit-card effect2" key={news.id}>
+            <p className="kit-details">
+              {dayjs.unix(news.date_updated_unix).format("YYYY-MM-DD")}
+            </p>
+          <p className="kit-description text-highlight">{news.title}</p>
+          <section>
+            <a
+              className="news-link kit-link"
+              href={news.permalink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Läs mer - (extern länk, SVT Text)
+            </a>
+          </section>
         </article>
       ))}
     </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
-// import "./kitlist_style.css";
+import "../pages/kitlist_style.css";
 
 // List all posts from API:
 export const SmhiMessage = () => {
@@ -18,11 +18,11 @@ export const SmhiMessage = () => {
   console.log("SMHI message:", smhi);
 
   return (
-    <div>
-      <h3>SMHI Meddelande:</h3>
-      <article className="kit-card">
-        <h4>{dayjs(smhi.time_stamp).format("YYYY-MM-DD kl: hh:mm")}</h4>
-        <h4>{smhi.text}</h4>
+    <div className="kits-container">
+      <h1>SMHI Meddelande:</h1>
+      <article className="kit-card effect2">
+        <p className="kit-details">{dayjs(smhi.time_stamp).format("YYYY-MM-DD kl: hh:mm")}</p>
+        <p className="kit-description">{smhi.text}</p>
       </article>
     </div>
   );

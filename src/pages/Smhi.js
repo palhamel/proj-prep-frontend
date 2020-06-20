@@ -3,13 +3,19 @@ import { SmhiMessage } from "../components/SmhiMessage";
 import { SmhiAlerts } from "../components/SmhiAlerts";
 // import { WeatherComp } from "../components/WeatherComp";
 
+import "./kitlist_style.css";
+
 export const Smhi = () => {
   return (
     <div>
-      <h2>SMHI Page</h2>
-      {/* <WeatherComp /> */}
-      <SmhiMessage />
-      <SmhiAlerts />
+      <section className="container-page">
+        <div className="kits-continer">
+          <h2>SMHI Page</h2>
+          {/* <WeatherComp /> */}
+          <SmhiMessage />
+          <SmhiAlerts />
+        </div>
+      </section>
     </div>
   );
 };

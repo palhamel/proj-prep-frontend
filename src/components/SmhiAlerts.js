@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
-// import "./kitlist_style.css";
+import "../pages/kitlist_style.css";
 
 // List all posts from API:
 export const SmhiAlerts = () => {
@@ -18,20 +18,29 @@ export const SmhiAlerts = () => {
   // console.log("SMHI Alerts:", smhi);
 
   return (
-    <div>
-      <h3>SMHI - aktuella varningar:</h3>
+    <div className="kits-container">
+      <h1>SMHI - aktuella varningar:</h1>
       {smhi.map((alert) => (
-        <article className="kit-card" key={alert.identifier}>
-          <h3>{alert.info.eventCode[3].value}</h3>
-          <h3>{alert.info.headline}</h3>
-          <h4>{alert.info.description}</h4>
+        <article className="kit-card effect2" key={alert.identifier}>
+          <p className="kit-description">{alert.info.eventCode[3].value}</p>
+          <p className="kit-description">{alert.info.headline}</p>
+          <p className="kit-details">{alert.info.description}</p>
           {/* <h3>{alert.info.eventCode[1].value}</h3> */}
-          <h4> Skapad: {dayjs(alert.sent).format("YYYY-MM-DD")}</h4>
-          <h4>
-            <a href={alert.info.web} target="_blank" rel="noopener noreferrer">
-              Läs mer - extern länk
+          <p className="kit-details">
+            {" "}
+            Skapad: {dayjs(alert.sent).format("YYYY-MM-DD")}
+          </p>
+          <p className="kit-details"> Senast uppdaterat: {(alert.code[1]).replace(/\D+/g, '')}</p>
+          <section>
+            <a
+              className="news-link kit-link"
+              href={alert.info.web}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Läs mer - (extern länk, SMHI)
             </a>
-          </h4>
+          </section>
         </article>
       ))}
     </div>
