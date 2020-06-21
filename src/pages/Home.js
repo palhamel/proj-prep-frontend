@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import styled from "styled-components";
-
 // Navigation:
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
@@ -12,9 +11,8 @@ import { NewsList } from "./NewsList";
 import { Prepping } from "./Prepping";
 import { WhoInfo } from "./WhoInfo";
 import { Smhi } from "./Smhi";
-import { Covid19apiAll } from "../components/Covid19apiAll";
-
 import { KitDetails } from "./KitDetail";
+import { Covid19apiAll } from "../components/Covid19apiAll";
 
 export const Home = () => {
   return (

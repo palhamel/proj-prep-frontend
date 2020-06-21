@@ -1,10 +1,13 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import { NavLink } from "react-router-dom";
 import bgImage from "../images/bg_img-1440x400.png";
 import logo from "../images/Prepper_Stash_vit.png";
+
+import styled from "styled-components";
 import "../components/nav_style.css";
+// import { GlobalStyle } from "lib/Global";
+
 
 export const Nav = () => {
   return (
@@ -24,12 +27,12 @@ export const Nav = () => {
           </p>
         </SloganTextContainer>
         <HeaderText>
-          <Link to="/">Start </Link>
-          <Link to="/prepping">Prepping </Link>
-          <Link to="/kits">Kits </Link>
-          <Link to="/news">Nyheter </Link>
-          <Link to="/smhi">SMHI </Link>
-          <Link to="/who">WHO </Link>
+          <Link to="/"> Start </Link>
+          <Link to="/prepping"> Prepping </Link>
+          <Link to="/kits"> Krislådor </Link>
+          <Link to="/news"> Nyheter </Link>
+          <Link to="/smhi"> SMHI </Link>
+          <Link to="/who"> WHO </Link>
         </HeaderText>
       </ContainerLeft>
     </Container>

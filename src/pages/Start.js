@@ -3,6 +3,10 @@ import React from "react";
 
 // import "./start_style.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBolt } from "@fortawesome/free-solid-svg-icons";
+
+
 export const Start = () => {
   return (
     <div>
@@ -12,6 +16,7 @@ export const Start = () => {
         </time> */}
 
         <h2>Förberedd för oväder och strömavbrott! </h2>
+        
         <p>
           Människan blir mer och mer utsatt och sårbar i samhället, den moderna
           infrastrukturen och teknikens framfart gör oss mer och mer beroende.
@@ -21,6 +26,7 @@ export const Start = () => {
         </p>
 
         <section className="text-box-focus">
+          <FontAwesomeIcon icon={faBolt} size="4x" />
           <h1>
             En bra början kan vara att se till att det finns ett alternativt
             sätt att laga mat hemma.
