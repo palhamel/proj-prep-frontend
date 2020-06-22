@@ -42,7 +42,7 @@
   width: 50%;
 }
 .kit-details-right {
-  width: 40%;
+  width: auto;
 }
 .kit-details-article {
   margin: 35px 0px 0px 0px;

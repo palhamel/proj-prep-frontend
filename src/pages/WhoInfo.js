@@ -1,22 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobeEurope } from '@fortawesome/free-solid-svg-icons'
 
-import { NewsWho } from "../components/NewsWho";
-import { CovidStats } from "../components/CovidStats";
+import { NewsWho } from '../components/NewsWho'
+import { CovidStats } from '../components/CovidStats'
 // import { Covid19apiAll } from "../components/Covid19apiAll";
 // import { Covid19api } from "../components/Covid19api";
 
-import "./kitlist_style.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
-
+import './kitlist_style.css'
 
 export const WhoInfo = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>WHO <FontAwesomeIcon icon={faGlobeEurope} size="md" /></h2>
+        <h2>
+          WHO
+          <FontAwesomeIcon icon={faGlobeEurope} size="1x" />
+        </h2>
         <div className="kits-container">
           <p>
             Världshälsoorganisationen, WHO, är FN:s fackorgan för hälsofrågor.
@@ -27,22 +28,24 @@ export const WhoInfo = () => {
             sex faser över en sjukdoms spridningsrisk.
           </p>
           <p>
-            På{" "}
+            På
             <a
               className="link-text-inline"
               href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"
-            >
+              rel="noopener noreferrer"
+              target="_blank">
               WHO:s hemsida
-            </a>{" "}
+            </a>
             finns ytterligare information om coronaviruset och det
             internationella samarbetet för att begränsa utbrottet och dess
-            verkningar.{" "}
+            verkningar.
             <a
               className="link-text-inline"
-              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"
-            >
+              href="https://www.folkhalsomyndigheten.se/"
+              rel="noopener noreferrer"
+              target="_blank">
               Folkhälsomyndigheten
-            </a>{" "}
+            </a>
             följer utvecklingen kontinuerligt och uppdaterar sin hemsida
             löpande.
           </p>
@@ -78,10 +81,9 @@ export const WhoInfo = () => {
           <Link className="kit-link" to="/worldstat">
             <div className="btn">Statistik - Alla länder</div>
           </Link>
-
           <NewsWho />
         </div>
       </section>
     </div>
-  );
-};
+  )
+}

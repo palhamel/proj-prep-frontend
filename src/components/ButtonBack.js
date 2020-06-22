@@ -1,22 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-// import './backbutton_style.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const ButtonBack = () => {
   return (
-    <section >
+    <section>
       <Link to="/kits">
         <div
           className="back-button"
           role="button"
           tabIndex="0"
-          aria-pressed="false"
-        >
-          {" "}
+          aria-pressed="false">
+          {' '}
           <p>Tillbaka till listan</p>
         </div>
       </Link>
     </section>
-  );
-};
+  )
+}

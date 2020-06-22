@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // import dayjs from "dayjs";
 import "../pages/kitlist_style.css";
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 // List all posts from API:
 export const Covid19apiAll = () => {
@@ -25,9 +28,11 @@ export const Covid19apiAll = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Covid-19 statistik - alla länder</h2>
+        <h2>Covid-19 statistik</h2>
         <div className="kits-container">
+          <p>Data från alla länder som idag rapporterar till WHO. Uppdateras löpande.</p>
           <h4>Källa: api.covid19api.com</h4>
+          <h1>Senaste statistiken</h1>
 
           {covidStats.map((worldStats) => (
             <article className="kit-card effect2" key={worldStats.CountryCode}>
@@ -35,7 +40,10 @@ export const Covid19apiAll = () => {
                 {worldStats.Country}
               </p>
               <p className="kit-details">
-                Death cases: {worldStats.TotalDeaths}
+                New deaths: {worldStats.NewDeaths}
+              </p>
+              <p className="kit-details">
+                Total deaths: {worldStats.TotalDeaths}
               </p>
               <p className="kit-details">
                 Total cases: {worldStats.TotalConfirmed}
@@ -43,13 +51,14 @@ export const Covid19apiAll = () => {
               <p className="kit-details">
                 Recovery cases: {worldStats.TotalRecovered}
               </p>
-              <p></p>
-              <Link to="/who">
-                <div role="button" tabIndex="0" aria-pressed="false">
-                  {" "}
-                  <p className="kit-details">Tillbaka</p>
-                </div>
-              </Link>
+              {/* <Link
+                className="link-text-inline"
+                to="/who"
+                tabIndex="0"
+                aria-pressed="false"
+              >
+                Tillbaka
+              </Link> */}
             </article>
           ))}
         </div>

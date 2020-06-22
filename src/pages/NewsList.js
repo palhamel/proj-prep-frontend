@@ -14,7 +14,7 @@ export const NewsList = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Nyheter <FontAwesomeIcon icon={faNewspaper} size="md" /></h2>
+        <h2>Nyheter <FontAwesomeIcon icon={faNewspaper} size="1x" /></h2>
         <div className="kits-container">
           <p>
             I en krissituation är det oerhört viktigt att rätt information når

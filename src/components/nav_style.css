@@ -49,10 +49,6 @@ h3 {
     border-bottom: 2px solid rgb(101, 218, 187);
 
   }
-  a:hover {
-    /* background-color: yellow; */
-  }
-
 }
 
 
@@ -72,11 +68,5 @@ h3 {
     border-bottom: 2px solid rgb(101, 218, 187);
     
   }
-  a:hover {
-    /* background-color: yellow; */
-    /* transition: all ease-in-out 250ms; */
-  }
-
-
 
 }

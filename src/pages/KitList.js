@@ -23,7 +23,7 @@ export const KitList = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Krislådor <FontAwesomeIcon icon={faArchive} size="md" /></h2>
+        <h2>Krislådor <FontAwesomeIcon icon={faArchive} size="1x" /></h2>
         <section className="text-box-focus">
           <h1>
             Allt du behöver för att klara dig.
@@ -41,7 +41,7 @@ export const KitList = () => {
         {/* <h4>[sort on: MAT / UTRUSTNING]</h4> */}
         <div className="kits-container">
           {kits.map((kit) => (
-            <article className="kit-card effect2" key={kit._id}>
+            <article className="kit-card-wide effect2" key={kit._id}>
               <p className="kit-name">{kit.name}</p>
               <p className="kit-description">{kit.description}</p>
               <section>

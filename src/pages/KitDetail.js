@@ -31,7 +31,7 @@ export const KitDetails = () => {
       <section className="container-page">
         <h2>Produktbeskrivning</h2>
         <div className="kits-container">
-          <article className="kit-card effect2" key={kitDetail._id}>
+          <article className="kit-card-wide effect2" key={kitDetail._id}>
             <p className="kit-name">{kitDetail.name}</p>
             {/* <h4>Innehåll i lådan:</h4> */}
             <h4>Innehåll</h4>
@@ -70,7 +70,7 @@ export const KitDetails = () => {
                 <img
                   src={kitDetail.link_image}
                   alt="Logo"
-                  width="200"
+                  width="250"
                   margin="0px"
                 />
                 {/* <img

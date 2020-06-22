@@ -9,7 +9,9 @@ export const Prepping = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Prepping <FontAwesomeIcon icon={faFileAlt} size="md" /></h2>
+        <h2>
+          Prepping <FontAwesomeIcon icon={faFileAlt} size="1x" />
+        </h2>
         <p>
           Att vara förberedd, ordet ”prepping” betyder ”förberedelse” och är
           inte något nytt fenomen. Men det är smart!
@@ -96,19 +98,17 @@ export const Prepping = () => {
           gatukontor. Vattnet hämtas lättast i plastdunkar eller hinkar. Ha
           helst en dunk med skruvlock och kran.{" "}
           <span className="text-highlight">
-            Du kan själv ordna dricksvatten om du inte får det utkört! Använd sjövatten och vatten från friska brunnar, vattendrag och bäckar
-          som du säkert vet att är fria från giftigt utsläpp.
+            Du kan själv ordna dricksvatten om du inte får det utkört! Använd
+            sjövatten och vatten från friska brunnar, vattendrag och bäckar som
+            du säkert vet att är fria från giftigt utsläpp.
           </span>
-          
         </p>
-        <p>
-          Vattnet renar du så här:
-          <ul>
-            <li>Vattenreningstabletter</li>
-            <li>Sila bort småpartiklar</li>
-            <li>Koka vattnet utan lock i minst fem minuter</li>
-          </ul>
-        </p>
+        <p>Vattnet renar du så här:</p>
+        <ul>
+          <li>Vattenreningstabletter</li>
+          <li>Sila bort småpartiklar</li>
+          <li>Koka vattnet utan lock i minst fem minuter</li>
+        </ul>
         <p>
           Även i tanken på toaletten finns reservvatten – men glöm inte att rena
           det!
@@ -122,11 +122,13 @@ export const Prepping = () => {
         <p>
           Förbered något rum i bostaden som ett nödrum. Ett maximalt bra nödrum
           ligger:
-          <ul>
-            <li>mellan andra rum</li>
-            <li>mot söder</li>
-            <li>på övervåningen</li>
-          </ul>
+        </p>
+        <ul>
+          <li>mellan andra rum</li>
+          <li>mot söder</li>
+          <li>på övervåningen</li>
+        </ul>
+        <p>
           I flerfamiljshus väljer du rummet intill eller ovanpå/under det rum
           din granne håller varmt. Stäng till mot övriga kalla rum.
         </p>
@@ -150,12 +152,12 @@ export const Prepping = () => {
           Det är bra att kunna värma upp bostaden eller något rum i den på något
           annat sätt än med el när det blir strömavbrott. För att få extra värme
           kan du:
-          <ul>
-            <li>bränna stearinljus eller fotogenlampa med veke</li>
-            <li>använda fotogenkamin eller gasolvärmeapparat</li>
-            <li>Vara nära varandra - varje människa avger 100W</li>
-          </ul>
         </p>
+        <ul>
+          <li>bränna stearinljus eller fotogenlampa med veke</li>
+          <li>använda fotogenkamin eller gasolvärmeapparat</li>
+          <li>Vara nära varandra - varje människa avger 100W</li>
+        </ul>
         <h1>Koloxidfara</h1>
         <p>
           <span className="text-alert">Tänk på koloxidfaran.</span>
@@ -165,14 +167,14 @@ export const Prepping = () => {
           flämtande måste du genast vädra in frisk luft.
         </p>
         <h1>Brandrisk</h1>
+        <ul>
+          <li>Se upp med ljus i fönster! </li>
+          <li>Håll bränslen och öppna lågor åtskilda!</li>
+          <li>Förvara inte mer än tillåten mängd bränslen i bostaden.</li>
+          <li>Förvara bränsle i godkända kärl.</li>
+          <li>Ha alltid brandsläckningsutrustning tillgänglig.</li>
+        </ul>
         <p>
-          <ul>
-            <li>Se upp med ljus i fönster! </li>
-            <li>Håll bränslen och öppna lågor åtskilda!</li>
-            <li>Förvara inte mer än tillåten mängd bränslen i bostaden.</li>
-            <li>Förvara bränsle i godkända kärl.</li>
-            <li>Ha alltid brandsläckningsutrustning tillgänglig.</li>
-          </ul>
           Innan strömmen kommer tillbaka ska du stänga av alla elelement och
           andra större strömförbrukare. När strömmen återkommer slår du i mycket
           långsam takt på en apparat i taget.
@@ -215,8 +217,18 @@ export const Prepping = () => {
           en och halv timme och du har varmt vatten.
         </p>
         <p>
-          Källor: Civilförsvarsförbundet, www.civil.se, Lars Fält och
-          Naturkompaniet
+          Källor:
+          <a className="link-text-inline" href="https://www.civil.se" target="_blank" rel="noopener noreferrer">
+            Civilförsvarsförbundet
+          </a>
+          ,
+          <a className="link-text-inline" href="https://www.bokus.com/cgi-bin/product_search.cgi?authors=Lars%20F%E4lt" target="_blank" rel="noopener noreferrer">
+            Lars Fält
+          </a>
+          ,
+          <a className="link-text-inline" href="https://www.naturkompaniet.se/" target="_blank" rel="noopener noreferrer">
+            Naturkompaniet
+          </a>
         </p>
       </section>
     </div>

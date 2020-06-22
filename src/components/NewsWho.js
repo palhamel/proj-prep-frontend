@@ -25,8 +25,7 @@ export const NewsWho = () => {
 
         <article className="kit-card effect2" key={news.pubDate}>
           <p className="kit-details">{dayjs(news.pubDate).format('YYYY-MM-DD')}</p>
-
-          <p>{news.title}</p>
+          <p className="text-highlight">{news.title}</p>
           <section>
             <a className="link-text-inline" href={news.link} target="_blank" rel="noopener noreferrer">Läs mer - (extern länk, WHO)</a>
           </section>

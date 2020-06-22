@@ -15,7 +15,7 @@ export const Start = () => {
           Local Date Here
         </time> */}
 
-        <h2>Förberedd för oväder och strömavbrott! <FontAwesomeIcon icon={faUmbrella} size="md" /> <FontAwesomeIcon icon={faBolt} size="md" /></h2>
+        <h2>Förberedd för oväder och strömavbrott! <FontAwesomeIcon icon={faUmbrella} size="1x" /> <FontAwesomeIcon icon={faBolt} size="1x" /></h2>
         
         <p>
           Människan blir mer och mer utsatt och sårbar i samhället, den moderna
