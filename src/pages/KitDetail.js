@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 // import "./kits_style.css";
 import "./kitlist_style.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 export const KitDetails = () => {
   const { kitId } = useParams();
   // console.log(kidId)
@@ -26,51 +29,65 @@ export const KitDetails = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Innehåll</h2>
+        <h2>Produktbeskrivning</h2>
         <div className="kits-container">
           <article className="kit-card effect2" key={kitDetail._id}>
             <p className="kit-name">{kitDetail.name}</p>
             {/* <h4>Innehåll i lådan:</h4> */}
-            <p className="kit-description-details">
-              Innehåll: {kitDetail.content}
-            </p>
-            <p className="kit-details">
-              För antal personer: {kitDetail.for_persons}
-            </p>
-            <p className="kit-details">För antal dagar: {kitDetail.for_days}</p>
-            <p className="kit-details">
-              Ger kalorier/dag: {kitDetail.nutrition_cal}
-            </p>
-            <h4>Pris: {kitDetail.average_cost},-</h4>
-            <a
-              className="btn kit-link"
-              href={kitDetail.link_product}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Köp här hos Crisec
-            </a>
+            <h4>Innehåll</h4>
+            <p className="kit-description-details">{kitDetail.content}</p>
 
-            <img
-              src="https://criseq.se/wp-content/uploads/2020/05/crisec-5.png"
-              alt="Logo"
-              width="200"
-              margin="0px"
-            ></img>
+            <section className="kit-details-wrapper">
+              <div className="kit-details-left">
+                <p className="kit-details">
+                  För antal personer: {kitDetail.for_persons}
+                </p>
+                <p className="kit-details">
+                  För antal dagar: {kitDetail.for_days}
+                </p>
+                <p className="kit-details">
+                  Ger kalorier/dag: {kitDetail.nutrition_cal}
+                </p>
+                <h4>Pris: {kitDetail.average_cost},-</h4>
+                <p></p>
+                <a
+                  className="btn kit-link"
+                  href={kitDetail.link_product}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Köp produkten här
+                </a>
+                <div className="kit-details-article">
+                  <p className="kit-details-notes">
+                    Artikel nr: {kitDetail.article_nr}
+                  </p>
+                  <p className="kit-details-notes">Varumärke: {kitDetail.brand}</p>
+                </div>
+              </div>
 
-            <img
-              src={kitDetail.link_image}
-              alt="Logo"
-              width="200"
-              margin="0px"
-            ></img>
+              <div className="kit-details-right">
+                <img
+                  src={kitDetail.link_image}
+                  alt="Logo"
+                  width="200"
+                  margin="0px"
+                />
+                <img
+                  src="https://criseq.se/wp-content/uploads/2020/05/crisec-5.png"
+                  alt="Logo"
+                  width="200"
+                  margin="0px"
+                />
+              </div>
+            </section>
 
             {/* <ButtonBack /> */}
 
-            <Link to="/kits">
+            <Link to="/kits" className="kit-details kit-link">
               <div role="button" tabIndex="0" aria-pressed="false">
                 {" "}
-                <p className="kit-details">Tillbaka till listan</p>
+                <p><FontAwesomeIcon icon={faArrowLeft} size="sm" />Tillbaka till listan</p>
               </div>
             </Link>
           </article>

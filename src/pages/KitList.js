@@ -55,8 +55,8 @@ export const KitList = () => {
                 <button>Läs mer om innehållet här</button>
               </Link> */}
 
-              <Link className="kit-link" to={`kit/${kit._id}`}>
-                <div className="btn">Läs mer om innehåll</div>
+              <Link className="btn kit-link" to={`kit/${kit._id}`}>
+                <div>Läs mer om innehåll</div>
               </Link>
 
               {/*               <a
