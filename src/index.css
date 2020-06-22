@@ -79,6 +79,10 @@ h2 + p {
   margin: 0px 3px 0px 3px;
 }
 
+a.link-text {
+  color: black;
+}
+
 /* .active {
   background-color: rgb(147, 27, 165);
 

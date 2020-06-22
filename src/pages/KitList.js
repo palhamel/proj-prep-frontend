@@ -35,9 +35,7 @@ export const KitList = () => {
           </span>{" "}
           eller att det blivit förorenat.
         </p>
-
-
-        <h4>[sort on: MAT / UTRUSTNING]</h4>
+        {/* <h4>[sort on: MAT / UTRUSTNING]</h4> */}
         <div className="kits-container">
           {kits.map((kit) => (
             <article className="kit-card effect2" key={kit._id}>
@@ -49,6 +47,8 @@ export const KitList = () => {
                 </p>
                 <p className="kit-details">För antal dagar: {kit.for_days}</p>
                 <p className="kit-details">Typ: {kit.category}</p>
+                <p className="kit-details">Pris: {kit.average_cost},-</p>
+
               </section>
 
 {/*               <Link className="kit-link" to={`kit/${kit._id}`}>

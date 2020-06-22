@@ -31,29 +31,32 @@ export const KitDetails = () => {
           <article className="kit-card effect2" key={kitDetail._id}>
             <p className="kit-name">{kitDetail.name}</p>
             {/* <h4>Innehåll i lådan:</h4> */}
-            <p className="kit-description-details">{kitDetail.content}</p>
-            <h4>Pris: {kitDetail.average_cost},-</h4>
-            <p className="kit-details">
-              Ger kalorier/dag: {kitDetail.nutrition_cal}
+            <p className="kit-description-details">
+              Innehåll: {kitDetail.content}
             </p>
             <p className="kit-details">
               För antal personer: {kitDetail.for_persons}
             </p>
             <p className="kit-details">För antal dagar: {kitDetail.for_days}</p>
+            <p className="kit-details">
+              Ger kalorier/dag: {kitDetail.nutrition_cal}
+            </p>
+            <h4>Pris: {kitDetail.average_cost},-</h4>
             <a
               className="btn kit-link"
-              href="https://criseq.se/produkt-kategori/beredskapslada-krislada/"
+              href={kitDetail.link_product}
               rel="noopener noreferrer"
               target="_blank"
-            >Köp här hos Crisec</a>
+            >
+              Köp här hos Crisec
+            </a>
 
-
-            <img
+            {/* <img
               src="https://criseq.se/wp-content/uploads/2020/05/crisec-5.png"
               alt="Logo"
               width="200"
               margin="0px"
-            ></img>
+            ></img> */}
             {/* <ButtonBack /> */}
 
             <Link to="/kits">
