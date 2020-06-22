@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./kitlist_style.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArchive } from "@fortawesome/free-solid-svg-icons";
+
 // List all posts from API:
 export const KitList = () => {
   // URL to API as const:
@@ -20,7 +23,7 @@ export const KitList = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Krislådor</h2>
+        <h2>Krislådor <FontAwesomeIcon icon={faArchive} size="md" /></h2>
         <section className="text-box-focus">
           <h1>
             Allt du behöver för att klara dig.

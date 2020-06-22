@@ -2,11 +2,14 @@ import React from "react";
 
 // import "./start_style.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+
 export const Prepping = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Prepping</h2>
+        <h2>Prepping <FontAwesomeIcon icon={faFileAlt} size="md" /></h2>
         <p>
           Att vara förberedd, ordet ”prepping” betyder ”förberedelse” och är
           inte något nytt fenomen. Men det är smart!
@@ -46,7 +49,9 @@ export const Prepping = () => {
           Glöm inte att alltid ha bränsle för ditt kök hemma. Placera inte köket
           på spisen under köksfläkten – fettet i fläkten kan fatta eld, se upp
           för bränslespill och ha alltid en hink med vatten i närheten.
-          <span className="text-highlight">
+        </p>
+        <p>
+          <span className="text-alert">
             Engångsgrillar och kolgrillar får inte användas inomhus på grund av
             fara för koldioxid och brand.
           </span>
@@ -91,17 +96,19 @@ export const Prepping = () => {
           gatukontor. Vattnet hämtas lättast i plastdunkar eller hinkar. Ha
           helst en dunk med skruvlock och kran.{" "}
           <span className="text-highlight">
-            Du kan själv ordna dricksvatten om du inte får det utkört!
-          </span>{" "}
-          Använd sjövatten och vatten från friska brunnar, vattendrag och bäckar
+            Du kan själv ordna dricksvatten om du inte får det utkört! Använd sjövatten och vatten från friska brunnar, vattendrag och bäckar
           som du säkert vet att är fria från giftigt utsläpp.
+          </span>
+          
         </p>
-        <p>Vattnet renar du så här:</p>
-        <ul>
-          <li>Vattenreningstabletter</li>
-          <li>Sila bort småpartiklar</li>
-          <li>Koka vattnet utan lock i minst fem minuter</li>
-        </ul>
+        <p>
+          Vattnet renar du så här:
+          <ul>
+            <li>Vattenreningstabletter</li>
+            <li>Sila bort småpartiklar</li>
+            <li>Koka vattnet utan lock i minst fem minuter</li>
+          </ul>
+        </p>
         <p>
           Även i tanken på toaletten finns reservvatten – men glöm inte att rena
           det!
@@ -114,9 +121,14 @@ export const Prepping = () => {
         <h1>Nödrum</h1>
         <p>
           Förbered något rum i bostaden som ett nödrum. Ett maximalt bra nödrum
-          ligger: – mellan andra rum – mot söder – i övervåningen I
-          flerfamiljshus väljer du rummet intill eller ovanpå/under det rum din
-          granne håller varmt. Stäng till mot övriga kalla rum.
+          ligger:
+          <ul>
+            <li>mellan andra rum</li>
+            <li>mot söder</li>
+            <li>på övervåningen</li>
+          </ul>
+          I flerfamiljshus väljer du rummet intill eller ovanpå/under det rum
+          din granne håller varmt. Stäng till mot övriga kalla rum.
         </p>
         <h1>Tälta inomhus</h1>
         <p>
@@ -137,28 +149,33 @@ export const Prepping = () => {
         <p>
           Det är bra att kunna värma upp bostaden eller något rum i den på något
           annat sätt än med el när det blir strömavbrott. För att få extra värme
-          kan du: – bränna stearinljus eller fotogenlampa med veke – använda
-          fotogenkamin eller gasolvärmeapparat – varje människa avger 100W
+          kan du:
+          <ul>
+            <li>bränna stearinljus eller fotogenlampa med veke</li>
+            <li>använda fotogenkamin eller gasolvärmeapparat</li>
+            <li>Vara nära varandra - varje människa avger 100W</li>
+          </ul>
         </p>
         <h1>Koloxidfara</h1>
         <p>
-          Tänk på koloxidfaran.{" "}
-          <span className="text-highlight">
-            Vädra kort men rejält och ofta om du använder kok- eller
-            värmeapparater, som förbrukar mycket syre.
-          </span>{" "}
-          En stearinljuslåga är en bra mätare på om det finns syre. Minskar
-          lågan och blir den småningom flämtande måste du genast vädra in frisk
-          luft.
+          <span className="text-alert">Tänk på koloxidfaran.</span>
+          Vädra kort men rejält och ofta om du använder kok- eller
+          värmeapparater, som förbrukar mycket syre. En stearinljuslåga är en
+          bra mätare på om det finns syre. Minskar lågan och blir den småningom
+          flämtande måste du genast vädra in frisk luft.
         </p>
         <h1>Brandrisk</h1>
         <p>
-          Se upp med ljus i fönster! – Håll bränslen och öppna lågor åtskilda! –
-          Förvara inte mer än tillåten mängd bränslen i bostaden. – Förvara
-          bränsle i godkända kärl. – Ha alltid brandsläckningsutrustning
-          tillgänglig. Innan strömmen kommer tillbaka ska du stänga av alla
-          elelement och andra större strömförbrukare. När strömmen återkommer
-          slår du i mycket långsam takt på en apparat i taget.
+          <ul>
+            <li>Se upp med ljus i fönster! </li>
+            <li>Håll bränslen och öppna lågor åtskilda!</li>
+            <li>Förvara inte mer än tillåten mängd bränslen i bostaden.</li>
+            <li>Förvara bränsle i godkända kärl.</li>
+            <li>Ha alltid brandsläckningsutrustning tillgänglig.</li>
+          </ul>
+          Innan strömmen kommer tillbaka ska du stänga av alla elelement och
+          andra större strömförbrukare. När strömmen återkommer slår du i mycket
+          långsam takt på en apparat i taget.
         </p>
         <h1>Överlevnadsburken</h1>
         <p>
@@ -197,10 +214,10 @@ export const Prepping = () => {
           i burken och lägg på locket. Hålen ger syre till ljusen. Sen tar det
           en och halv timme och du har varmt vatten.
         </p>
-        <li>
-          Källa: Civilförsvarsförbundet, www.civil.se, Lars Fält och
+        <p>
+          Källor: Civilförsvarsförbundet, www.civil.se, Lars Fält och
           Naturkompaniet
-        </li>
+        </p>
       </section>
     </div>
   );

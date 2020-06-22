@@ -24,8 +24,9 @@ export const CovidStats = () => {
 
   return (
     <div className="kits-container">
-      <h1>Covid-19 statistik: </h1>
-      <p> Globalt & bekräftade fall</p>
+      {/* <h1>Covid-19 statistik: </h1> */}
+      <h1>Covid-19</h1>
+      <p>Aktuella globalt bekräftade fall:</p>
       <article className="kit-card effect2">
         <p className="kit-details" >Currently infected: {covidStats.currently_infected}</p>
         <p className="kit-details">Recovery cases: {covidStats.recovery_cases}</p>

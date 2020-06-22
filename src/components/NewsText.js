@@ -21,21 +21,21 @@ export const NewsText = () => {
 
   return (
     <div className="kits-container">
-      {/* <h2>SVT Text-TV</h2> */}
+      <h2>Nyheter från SVT Text-TV:</h2>
       {news.map((news) => (
         <article className="kit-card effect2" key={news.id}>
           <p className="kit-details">
             {dayjs.unix(news.date_updated_unix).format("YYYY-MM-DD")}
           </p>
-          <p className="kit-description text-highlight">{news.title}</p>
+          <p className="kit-description">{news.title}</p>
           <section>
             <a
-              className="news-link kit-link"
+              className="link-text-inline"
               href={news.permalink}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Läs mer - (extern länk, SVT Text)
+              Läs mer - (SVT Text)
             </a>
           </section>
         </article>

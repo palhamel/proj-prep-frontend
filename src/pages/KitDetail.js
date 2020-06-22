@@ -73,12 +73,12 @@ export const KitDetails = () => {
                   width="200"
                   margin="0px"
                 />
-                <img
+                {/* <img
                   src="https://criseq.se/wp-content/uploads/2020/05/crisec-5.png"
                   alt="Logo"
                   width="200"
                   margin="0px"
-                />
+                /> */}
               </div>
             </section>
 

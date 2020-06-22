@@ -28,7 +28,7 @@ export const NewsWho = () => {
 
           <p>{news.title}</p>
           <section>
-            <a className="news-link kit-link" href={news.link} target="_blank" rel="noopener noreferrer">Läs mer - (extern länk, WHO)</a>
+            <a className="link-text-inline" href={news.link} target="_blank" rel="noopener noreferrer">Läs mer - (extern länk, WHO)</a>
           </section>
         </article>
       ))}

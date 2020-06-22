@@ -22,6 +22,7 @@ export const SmhiAlerts = () => {
 
   return (
     <div className="kits-container">
+      <FontAwesomeIcon icon={faExclamationTriangle} size="4x" />
       <h1>SMHI - aktuella varningar:</h1>
       <p>
         Varningarna delas in i olika klasser beroende på hur allvarligt vädret
@@ -29,26 +30,26 @@ export const SmhiAlerts = () => {
       </p>
       <section className="text-box-focus">
         <p>Vädervarning klass 1</p>
-        <p>
+        <h4>
           {" "}
           Väderutveckling väntas som innebär vissa risker för allmänheten och
           störningar för en del samhällsfunktioner.{" "}
-        </p>
+        </h4>
         <p>Vädervarning klass 2</p>
-        <p>
+        <h4>
           Väderutveckling väntas som kan innebära fara för allmänheten, stora
           materiella skador och stora störningar i viktiga samhällsfunktioner.
           Allmänheten uppmanas att följa upp ny information på internet, radio
           eller TV.{" "}
-        </p>
+        </h4>
         <p>Vädervarning klass 3</p>
-        <p>Mycket extremt väder väntas som kan innebära stor
+        <h4>Mycket extremt väder väntas som kan innebära stor
         fara för allmänheten och mycket stora störningar i viktiga
         samhällsfunktioner. Allmänheten uppmanas att följa upp ny information på
-        internet, radio eller TV.</p>
+        internet, radio eller TV.</h4>
       </section>
       {smhi.map((alert) => (
-        <article className="kit-card effect2" key={alert.identifier}>
+        <article className="kit-card-wide effect2" key={alert.identifier}>
           <p className="kit-description text-alert">
             <FontAwesomeIcon icon={faExclamationTriangle} size="sm" />{" "}
             {alert.info.eventCode[3].value}
@@ -58,7 +59,7 @@ export const SmhiAlerts = () => {
           {/* <h3>{alert.info.eventCode[1].value}</h3> */}
           <section>
             <a
-              className="news-link kit-link"
+              className="link-text-inline"
               href={alert.info.web}
               target="_blank"
               rel="noopener noreferrer"

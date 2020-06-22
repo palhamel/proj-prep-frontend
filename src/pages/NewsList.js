@@ -2,6 +2,10 @@ import React from "react";
 
 import "./kitlist_style.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+
+
 import { NewsText } from "../components/NewsText";
 import { NewsWorld } from "../components/NewsWorld";
 
@@ -10,7 +14,7 @@ export const NewsList = () => {
   return (
     <div>
       <section className="container-page">
-        <h2>Nyheter</h2>
+        <h2>Nyheter <FontAwesomeIcon icon={faNewspaper} size="md" /></h2>
         <div className="kits-container">
           <p>
             I en krissituation är det oerhört viktigt att rätt information når
