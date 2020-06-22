@@ -51,12 +51,20 @@ export const KitDetails = () => {
               Köp här hos Crisec
             </a>
 
-            {/* <img
+            <img
               src="https://criseq.se/wp-content/uploads/2020/05/crisec-5.png"
               alt="Logo"
               width="200"
               margin="0px"
-            ></img> */}
+            ></img>
+
+            <img
+              src={kitDetail.link_image}
+              alt="Logo"
+              width="200"
+              margin="0px"
+            ></img>
+
             {/* <ButtonBack /> */}
 
             <Link to="/kits">
