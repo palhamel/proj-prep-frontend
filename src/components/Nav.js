@@ -1,13 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 // import { NavLink } from "react-router-dom";
-import bgImage from "../images/bg_img-1440x400.png";
-import logo from "../images/Prepper_Stash_vit.png";
+import styled from 'styled-components'
+import bgImage from '../images/bg_img-1440x400.png'
+import logo from '../images/Prepper_Stash_vit.png'
 
-import styled from "styled-components";
-import "../components/nav_style.css";
+import './nav_style.css'
 // import { GlobalStyle } from "lib/Global";
-
 
 export const Nav = () => {
   return (
@@ -36,7 +35,7 @@ export const Nav = () => {
         </HeaderText>
       </ContainerLeft>
     </Container>
-  );
+  )
 };
 
 // styled-components:
@@ -47,24 +46,24 @@ const Container = styled.section`
   /* align-items: center;
   align-content: center; */
   background-image: url(${bgImage});
+  background-size: 700px 300px;
   padding: 10px;
   margin: 0px;
   height: 100px;
   width: 700px;
   @media (min-width: 668px) {
     height: 150px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     align-content: center;
     width: auto;
   }
   @media (min-width: 900px) {
     height: 200px;
-    
-    /* width: 1400px; */
-    /* margin-top: 20px; */
+    background-size: 100% 100%;
     padding-top: 50px;
   }
-`;
+`
+
 const ContainerRight = styled.section`
   display: flex;
   flex-direction: column;
@@ -81,7 +80,7 @@ const ContainerRight = styled.section`
     /* margin-left: 50px;
     width: 700px; */
   }
-`;
+`
 
 const ContainerLeft = styled.section`
   display: flex;
@@ -98,14 +97,14 @@ const ContainerLeft = styled.section`
     /* margin-right: 40px;
     margin-top: 50px; */
   }
-`;
+`
 
 const HeaderText = styled.section`
   margin: 0px 0px 5px 0px;
   @media (min-width: 668px) {
     font-size: 34px;
   },
-`;
+`
 
 const SloganTextContainer = styled.section`
   margin: 20px 0px 0px 20px;
@@ -132,4 +131,4 @@ const SloganTextContainer = styled.section`
     /* padding-left: 30px; */
     /* height: 80px; */
   }
-`;
+`

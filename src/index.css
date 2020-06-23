@@ -5,8 +5,8 @@
   /* margin: 1em 0 0; */
 }
 html {
-  /* width: 400px; */
-  margin: 0px;
+  /* width: auto; */
+  /* margin: 0px; */
 }
 /* main {
   width: auto;
@@ -48,19 +48,18 @@ h2 {
   font-size: 30px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-
 }
 h3 {
   font-size: 30px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-
-  
 }
 h4 {
   color: rgb(0, 0, 0);
+}
 
-
+a {
+  text-decoration: none;
 }
 
 p {
@@ -91,8 +90,10 @@ a.link-text {
 }
 a.link-text-inline {
   color: black;
-  font-size: large;
+  font-size: 20px;
   border-bottom: 1px solid rgb(101, 218, 187);  
+  padding: 0px 5px 0px 5px;
+
 }
 a.link-text-inline:hover {
   /* background-color: yellow; */
@@ -106,7 +107,44 @@ a.link-text-inline:hover {
 } */
 
 /****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
+@media (min-width: 200px) and (max-width: 767px)  {
+  
+  /* typography
+  =================== */
+  h1 {
+    font-size: 22px;
+    font-family: 'Cabin Sketch', sans-serif;
+    color: rgb(0, 0, 0);
+  }
 
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
 
+  }
+  h3 {
+    font-size: 30px;
+
+  }
+  h4 {
+
+  }
+
+  p {
+    font-size: 16px;
+
+  }
+
+  h2 + p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  a.link-text-inline {
+    font-size: 16px;
+    padding: 0px 5px 0px 5px;
+    
+  }
+
+}
 
 

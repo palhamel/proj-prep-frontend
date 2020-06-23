@@ -180,5 +180,8 @@ button {
 }
 
 /****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
+@media (min-width: 200px) and (max-width: 767px)  {
+  
+}
 
 
