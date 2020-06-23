@@ -13,7 +13,6 @@ export const SmhiAlerts = () => {
       .then((res) => res.json())
       .then((json) => setSmhi(json.alert))
   }, [apiURL])
-  console.log('SMHI Alerts:', smhi)
 
   return (
     <main className="kits-container">

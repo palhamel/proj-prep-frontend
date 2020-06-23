@@ -13,13 +13,12 @@ export const KitList = () => {
       .then((res) => res.json())
       .then((json) => setKits(json))
   }, [apiURL])
-  console.log(kits)
 
   return (
     <main>
       <section className="container-page">
         <h2>
-          Krislådor
+          Krislåda
           <FontAwesomeIcon icon={faArchive} size="1x" />
         </h2>
         <p>
@@ -31,6 +30,8 @@ export const KitList = () => {
           </span>
           eller att det blivit förorenat.
         </p>
+        <p>Förutsättningar och behov ser olika ut, exempelvis om man bor på landet eller i en stad, i hus eller lägenhet. Även om det finns vissa grundläggande saker som är bra att ha för de allra flesta, exempelvis mat som tål rumstemperatur och är lätt att tillaga, så måste alla utgå ifrån egna förutsättningar och behov. Finns det husdjur? Behöver någon daglig medicinering eller finns det småbarn i hushållet? Man kan gå ihop om vissa saker och låna av varandra.</p>
+        <p>Det minsta lilla man gjort för en bättre hemberedskap kommer att vara värdefullt den dagen något händer. Ju fler som har packat en krislåda desto bättre kommer din kommun och landet som helhet att klara en kris och desto större möjligheter har vi att hjälpa andra.</p>
         <section className="text-box-focus">
           <h1>
             Allt du behöver för att klara dig:

@@ -14,15 +14,15 @@ export const WhoInfo = () => {
           WHO 
           <FontAwesomeIcon icon={faGlobeEurope} size="1x" />
         </h2>
-        <div className="kits-container">
-          <p>
-            Världshälsoorganisationen, WHO, är FN:s fackorgan för hälsofrågor.
-            Enligt WHO:s konstitution är målet att alla människor ska uppnå
-            högsta möjliga hälsa, där hälsa definieras som ett tillstånd av
-            fullständigt fysiskt, psykiskt och socialt välbefinnande. Efter
-            fågelinfluensan H5N1 utbrott 2005 införde WHO en bedömingslista i
-            sex faser över en sjukdoms spridningsrisk.
-          </p>
+        <p>
+          Världshälsoorganisationen, WHO, är FN:s fackorgan för hälsofrågor.
+          Enligt WHO:s konstitution är målet att alla människor ska uppnå
+          högsta möjliga hälsa, där hälsa definieras som ett tillstånd av
+          fullständigt fysiskt, psykiskt och socialt välbefinnande. Efter
+          fågelinfluensan H5N1 utbrott 2005 införde WHO en bedömingslista i
+          sex faser över en sjukdoms spridningsrisk.
+        </p>
+        <article className="kits-container">
           <p>
             På
             <a
@@ -61,7 +61,7 @@ export const WhoInfo = () => {
             <div className="btn">Statistik - Alla länder</div>
           </Link>
           <NewsWho />
-        </div>
+        </article>
       </section>
     </main>
   )

@@ -20,7 +20,7 @@ export const Nav = () => {
         <HeaderText>
           <Link className="nav-text" to="/"> Start </Link>
           <Link className="nav-text" to="/prepping"> Prepping </Link>
-          <Link className="nav-text" to="/kits"> Krislådor </Link>
+          <Link className="nav-text" to="/kits"> Krislåda </Link>
           <Link className="nav-text" to="/news"> Nyheter </Link>
           <Link className="nav-text" to="/smhi"> SMHI </Link>
           <Link className="nav-text" to="/who"> WHO </Link>

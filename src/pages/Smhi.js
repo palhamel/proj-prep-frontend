@@ -12,11 +12,18 @@ export const Smhi = () => {
         <h2>SMHI<FontAwesomeIcon icon={faCloudSunRain} size="1x" /></h2>
         <p>
           Vädret i Sverige övervakas dagligen av Sveriges meteorologiska och
-          hydrologiska institut, SMHI. En av SMHI:s viktigaste uppgifter är att
+          hydrologiska institut,
+          <a
+            className="link-text-inline"
+            href="https://www.smhi.se"
+            rel="noopener noreferrer"
+            target="_blank">
+              SMHI.
+          </a>
+          En av SMHI:s viktigaste uppgifter är att
           varna för oväder för att skydda liv och egendom.
         </p>
         <section className="kits-container">
-          {/* <WeatherComp /> */}
           <SmhiMessage />
           <SmhiAlerts />
         </section>

@@ -16,14 +16,14 @@ export const NewsList = () => {
           Nyheter
           <FontAwesomeIcon icon={faNewspaper} size="1x" />
         </h2>
+        <p>
+          I en krissituation är det oerhört viktigt att rätt information når
+          ut. Strömavbrott och telestörningar kan innebära att du inte når de
+          nyhetsflöden och informationskällor du är van vid. Vid den sortens
+          störningar är vanliga radiosändningar en säker källa till
+          information.
+        </p>
         <article className="kits-container">
-          <p>
-            I en krissituation är det oerhört viktigt att rätt information når
-            ut. Strömavbrott och telestörningar kan innebära att du inte når de
-            nyhetsflöden och informationskällor du är van vid. Vid den sortens
-            störningar är vanliga radiosändningar en säker källa till
-            information.
-          </p>
           <p>
             <span className="text-alert">
               Att vara källkritisk innebär att värdera den information man tar
