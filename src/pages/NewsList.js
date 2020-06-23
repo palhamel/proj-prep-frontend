@@ -24,7 +24,7 @@ export const NewsList = () => {
             information.
           </p>
           <p>
-            <span className="text-highlight">
+            <span className="text-alert">
               Att vara källkritisk innebär att värdera den information man tar
               del av.{" "}
             </span>
@@ -46,8 +46,10 @@ export const NewsList = () => {
             Det är lättare att vara kritisk mot information som sprids av
             okända.
           </p>
-          <NewsText />
-          <NewsWorld />
+          <section>
+            <NewsText />
+            <NewsWorld />
+          </section>
         </div>
       </section>
     </div>

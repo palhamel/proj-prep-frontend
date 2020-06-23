@@ -62,7 +62,7 @@
   margin: 10px 0px 5px 0px;
 }
 .kit-description-details {
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 0px 5px 0px;
 }
 
@@ -165,7 +165,7 @@ button {
   font-weight: 700;
   /* padding: 5px 0px 10px 15px; */
   margin-top: 10px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   
 }
 
@@ -181,6 +181,46 @@ button {
 
 /****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
 @media (min-width: 200px) and (max-width: 767px)  {
+  .btn {
+    width: 100px;
+    height: 10px;
+    font-size: 10px;
+  }
+  .kit-name {
+    font-size: 20px;
+  }
+  .kit-description {
+    font-size: 16px;
+  }
+
+  .kit-description-details {
+    font-size: 14px;
+  }
+
+  .kit-details {
+    font-size: 13px;
+  }
+
+  .kit-details-notes {
+    font-size: 14px;
+  }
+  .kit-details-image {
+    width: 90px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  .kit-details-notes {
+    font-size: 10px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .smhi-message-text {
+    font-size: 13px;
+    line-height: 1.5em;
+    margin: 0px 0px 2px 0px;
+  }
   
 }
 

@@ -69,6 +69,7 @@ export const KitDetails = () => {
               <div className="kit-details-right">
                 <img
                   src={kitDetail.link_image}
+                  className="kit-details-image"
                   alt="Logo"
                   width="250"
                   margin="0px"
@@ -85,10 +86,10 @@ export const KitDetails = () => {
             {/* <ButtonBack /> */}
 
             <Link to="/kits" className="kit-details kit-link">
-              <div role="button" tabIndex="0" aria-pressed="false">
-                {" "}
                 <p><FontAwesomeIcon icon={faArrowLeft} size="sm" />Tillbaka till listan</p>
-              </div>
+              {/* <div role="button" tabIndex="0" aria-pressed="false">
+                {" "}
+              </div> */}
             </Link>
           </article>
         </div>

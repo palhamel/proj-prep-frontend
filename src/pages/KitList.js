@@ -24,20 +24,20 @@ export const KitList = () => {
     <div>
       <section className="container-page">
         <h2>Krislådor <FontAwesomeIcon icon={faArchive} size="1x" /></h2>
-        <section className="text-box-focus">
-          <h1>
-            Allt du behöver för att klara dig.
-          </h1>
-        </section>
         <p>
           Att ha en krislåda hemma för sin hemberedskap är viktigt för att kunna
           möta eventuella krissituationer eller andra störningar som kan uppstå.
-          Det kan vara allt{" "}
+          Det kan vara allt
           <span className="text-highlight">
             från strömavbrott till att vattnet slutar rinna ur kranen
-          </span>{" "}
+          </span>
           eller att det blivit förorenat.
         </p>
+        <section className="text-box-focus">
+          <h1>
+            Allt du behöver för att klara dig:
+          </h1>
+        </section>
         {/* <h4>[sort on: MAT / UTRUSTNING]</h4> */}
         <div className="kits-container">
           {kits.map((kit) => (
@@ -59,7 +59,7 @@ export const KitList = () => {
               </Link> */}
 
               <Link className="btn kit-link" to={`kit/${kit._id}`}>
-                <div>Läs mer om innehåll</div>
+                Läs mer om innehåll
               </Link>
 
               {/*               <a

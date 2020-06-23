@@ -20,7 +20,7 @@ export const NewsWorld = () => {
 
   return (
     <div className="kits-container">
-      <h2>BBC NEWS, ämnessökning på Covid</h2>
+      <h2>Nyheter från BBC News om Covid</h2>
       {news.map((news) => (
         <article className="kit-card effect2" key={news.publishedAt}>
           <p className="kit-details">

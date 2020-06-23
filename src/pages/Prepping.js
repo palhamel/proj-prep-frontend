@@ -1,7 +1,5 @@
 import React from "react";
-
 // import "./start_style.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -73,7 +71,7 @@ export const Prepping = () => {
           Förslag på livsmedel i reservförrådet, räcker för en person i en
           vecka:
         </p>
-        <ul>
+        <ul className="list-text-items">
           <li>Kött- och fiskkonserver, 1000 g</li>
           <li>Grönsakskonserver, 2000 g</li>
           <li>Ris eller pasta, 500 g</li>
@@ -104,7 +102,7 @@ export const Prepping = () => {
           </span>
         </p>
         <p>Vattnet renar du så här:</p>
-        <ul>
+        <ul className="list-text-items">
           <li>Vattenreningstabletter</li>
           <li>Sila bort småpartiklar</li>
           <li>Koka vattnet utan lock i minst fem minuter</li>
@@ -123,10 +121,10 @@ export const Prepping = () => {
           Förbered något rum i bostaden som ett nödrum. Ett maximalt bra nödrum
           ligger:
         </p>
-        <ul>
-          <li>mellan andra rum</li>
-          <li>mot söder</li>
-          <li>på övervåningen</li>
+        <ul className="list-text-items">
+          <li>Mellan andra rum</li>
+          <li>Mot söder</li>
+          <li>På övervåningen</li>
         </ul>
         <p>
           I flerfamiljshus väljer du rummet intill eller ovanpå/under det rum
@@ -153,7 +151,7 @@ export const Prepping = () => {
           annat sätt än med el när det blir strömavbrott. För att få extra värme
           kan du:
         </p>
-        <ul>
+        <ul className="list-text-items">
           <li>bränna stearinljus eller fotogenlampa med veke</li>
           <li>använda fotogenkamin eller gasolvärmeapparat</li>
           <li>Vara nära varandra - varje människa avger 100W</li>
@@ -167,7 +165,7 @@ export const Prepping = () => {
           flämtande måste du genast vädra in frisk luft.
         </p>
         <h1>Brandrisk</h1>
-        <ul>
+        <ul className="list-text-items">
           <li>Se upp med ljus i fönster! </li>
           <li>Håll bränslen och öppna lågor åtskilda!</li>
           <li>Förvara inte mer än tillåten mängd bränslen i bostaden.</li>
@@ -190,7 +188,7 @@ export const Prepping = () => {
           i burken och ställ den på en plats som alla i familjen känner till.
         </p>
         <p>Överlevnadsburken kan innehålla:</p>
-        <ul>
+        <ul className="list-text-items">
           <li>Batterier i reserv</li>
           <li>Choklad</li>
           <li>Multiverktyg, mejsel och tång </li>

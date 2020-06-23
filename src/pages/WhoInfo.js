@@ -15,7 +15,7 @@ export const WhoInfo = () => {
     <div>
       <section className="container-page">
         <h2>
-          WHO
+          WHO 
           <FontAwesomeIcon icon={faGlobeEurope} size="1x" />
         </h2>
         <div className="kits-container">
