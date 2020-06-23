@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400;0,600;0,700;1,700&display=swap');
 /* insert overall font margins for text: */
 * + * {
-  margin: 1em 0 0;
+  /* margin: 1em 0 0; */
 }
+html {
+  /* width: 400px; */
+  margin: 0px;
+}
+/* main {
+  width: auto;
+} */
 
 body {
   margin: 0;
@@ -97,3 +104,9 @@ a.link-text-inline:hover {
   background-color: rgb(147, 27, 165);
 
 } */
+
+/****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
+
+
+
+

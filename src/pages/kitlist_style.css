@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* width: auto; */
 }
 
 .kit-card {
@@ -48,12 +49,6 @@
   margin: 35px 0px 0px 0px;
 }
 
-
-
-
-
-
-
 /* typography
 =================== */
 .kit-name {
@@ -90,7 +85,6 @@ a.kit-link {
   border-bottom: none;
 }
 
-
 button {
   padding: 5px;
   margin: 10px 0px 5px 0px;
@@ -109,9 +103,6 @@ button {
   line-height: 1.5em;
   margin: 0px 0px 2px 0px;
 }
-
-
-
 
 
 /* kit-card effect drop shadow
@@ -187,3 +178,7 @@ button {
   background-image: linear-gradient(to bottom, #afb8aa, #89968c);
   text-decoration: none;
 }
+
+/****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
+
+

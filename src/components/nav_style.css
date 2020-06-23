@@ -3,17 +3,17 @@
   width: 100px;
 }
 
-a {
+/* typography
+=================== */
+a.nav-text {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   margin: 0px 5px;
   border-bottom: 1px solid rgb(101, 218, 187);  
 }
-a:hover {
-  /* background-color: yellow; */
-  /* border-bottom: 5px solid rgb(101, 218, 187); */
+a.nav-text:hover {
   border-bottom: 2px solid #f2c086;
 }
 
@@ -29,43 +29,50 @@ h3 {
   color: rgb(255, 255, 255);
   font-family: 'Cabin Sketch', cursive;
   font-style: italic;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 700;
-  display: true;
+  /* display: true; */
   margin: 0px;
 }
 
-@media (min-width: 668px) {
+/****** MEDIA QUERIES FOR RESPONSIVE DESIGN ******/
 
+@media (min-width: 668px) {
   .logo-image {
-    width: 200px;
+    width: 150px;
   }
-  a {
+  a.nav-text {
     color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
-    margin: 0px 5px;
+    margin: 0px 2px;
     border-bottom: 2px solid rgb(101, 218, 187);
 
   }
+  .slogan-text {
+    font-size: 28px;
+    margin-top: 25px;
+  }
 }
-
-
 
 @media (min-width: 900px) {
 
   .logo-image {
-    width: 240px;
+    width: 200px;
   }
+  .slogan-text {
+    font-size: 34px;
+    margin-top: 20px;
 
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 400;
+  }
+  a.nav-text {
+
+    font-size: 26px;
+    /* font-weight: 700; */
     margin: 0px 5px;
-    border-bottom: 2px solid rgb(101, 218, 187);
+
+
     
   }
 
