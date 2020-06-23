@@ -1,29 +1,25 @@
-import React from "react";
-// import dayjs from 'dayjs'
-
-// import "./start_style.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBolt, faUmbrella} from "@fortawesome/free-solid-svg-icons";
-
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBolt, faUmbrella } from '@fortawesome/free-solid-svg-icons'
 
 export const Start = () => {
   return (
-    <div>
+    <main>
       <section className="container-page">
-        {/* <time dateTime="" className="date">
-          Local Date Here
-        </time> */}
+        <h2>
+          Förberedd för oväder och strömavbrott!
+          <FontAwesomeIcon icon={faUmbrella} size="1x" />
+          {' '}
+          <FontAwesomeIcon icon={faBolt} size="1x" />
+        </h2>
 
-        <h2>Förberedd för oväder och strömavbrott! <FontAwesomeIcon icon={faUmbrella} size="1x" /> <FontAwesomeIcon icon={faBolt} size="1x" /></h2>
-        
         <p>
           Människan blir mer och mer utsatt och sårbar i samhället, den moderna
-          infrastrukturen och teknikens framfart gör oss mer och mer beroende. 
+          infrastrukturen och teknikens framfart gör oss mer och mer beroende.
         </p>
         <p>
           <span className="text-highlight">
-            Vad händer när vi blir strömlösa, insnöade eller översvämmade? 
+            Vad händer när vi blir strömlösa, insnöade eller översvämmade?
           </span>
 
         </p>
@@ -41,6 +37,6 @@ export const Start = () => {
           produkter som gör livet lite lättare om något oväntat händer.
         </p>
       </section>
-    </div>
-  );
-};
+    </main>
+  )
+}

@@ -1,30 +1,26 @@
-import React from "react";
-import { SmhiMessage } from "../components/SmhiMessage";
-import { SmhiAlerts } from "../components/SmhiAlerts";
-// import { WeatherComp } from "../components/WeatherComp";
-
-import "./kitlist_style.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudSunRain } from "@fortawesome/free-solid-svg-icons";
-
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCloudSunRain } from '@fortawesome/free-solid-svg-icons'
+import { SmhiMessage } from '../components/SmhiMessage'
+import { SmhiAlerts } from '../components/SmhiAlerts'
+import './kitlist_style.css'
 
 export const Smhi = () => {
   return (
-    <div>
+    <main>
       <section className="container-page">
-        <h2>SMHI <FontAwesomeIcon icon={faCloudSunRain} size="1x" /></h2>
+        <h2>SMHI<FontAwesomeIcon icon={faCloudSunRain} size="1x" /></h2>
         <p>
           Vädret i Sverige övervakas dagligen av Sveriges meteorologiska och
           hydrologiska institut, SMHI. En av SMHI:s viktigaste uppgifter är att
           varna för oväder för att skydda liv och egendom.
         </p>
-        <div className="kits-container">
+        <section className="kits-container">
           {/* <WeatherComp /> */}
           <SmhiMessage />
           <SmhiAlerts />
-        </div>
+        </section>
       </section>
-    </div>
-  );
-};
+    </main>
+  )
+}

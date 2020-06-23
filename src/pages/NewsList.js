@@ -1,21 +1,22 @@
-import React from "react";
+import React from 'react'
 
-import "./kitlist_style.css";
+import './kitlist_style.css'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 
+import { NewsText } from '../components/NewsText'
+import { NewsWorld } from '../components/NewsWorld'
 
-import { NewsText } from "../components/NewsText";
-import { NewsWorld } from "../components/NewsWorld";
-
-// List all posts from API:
 export const NewsList = () => {
   return (
-    <div>
+    <main>
       <section className="container-page">
-        <h2>Nyheter <FontAwesomeIcon icon={faNewspaper} size="1x" /></h2>
-        <div className="kits-container">
+        <h2>
+          Nyheter
+          <FontAwesomeIcon icon={faNewspaper} size="1x" />
+        </h2>
+        <article className="kits-container">
           <p>
             I en krissituation är det oerhört viktigt att rätt information når
             ut. Strömavbrott och telestörningar kan innebära att du inte når de
@@ -26,23 +27,21 @@ export const NewsList = () => {
           <p>
             <span className="text-alert">
               Att vara källkritisk innebär att värdera den information man tar
-              del av.{" "}
+              del av.
             </span>
             Det betyder dels att förstå att vissa källor har högre trovärdighet
             än andra, dels att vara medveten om att avsändare av information har
-            ett syfte. Varför finns informationen?{" "}
-            <span className="text-highlight">
+            ett syfte. Varför finns informationen?
+            <span className="text-alert">
               Vem tjänar på att informationen sprids?
             </span>
             Har den utformats för att få människor att agera på ett visst sätt?
           </p>
           <p>
-            I allmänhet litar vi på våra vänner.{" "}
-            <span className="text-highlight">
-              Att dela information som inte är sann i sociala medier sprider
-              inte bara osanningen vidare, det ger dessutom informationen tyngd
-              genom att det är en vän som vidarebefordrar den.
-            </span>{" "}
+            I allmänhet litar vi på våra vänner.
+            Att dela information som inte är sann i sociala medier sprider
+            inte bara osanningen vidare, det ger dessutom informationen tyngd
+            genom att det är en vän som vidarebefordrar den.
             Det är lättare att vara kritisk mot information som sprids av
             okända.
           </p>
@@ -50,8 +49,8 @@ export const NewsList = () => {
             <NewsText />
             <NewsWorld />
           </section>
-        </div>
+        </article>
       </section>
-    </div>
-  );
-};
+    </main>
+  )
+}

@@ -1,29 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import './kitlist_style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArchive } from '@fortawesome/free-solid-svg-icons'
 
-import "./kitlist_style.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArchive } from "@fortawesome/free-solid-svg-icons";
-
-// List all posts from API:
 export const KitList = () => {
-  // URL to API as const:
-  const apiURL = "http://localhost:8080/kits";
-  const [kits, setKits] = useState([]);
+  const apiURL = 'http://localhost:8080/kits'
+  const [kits, setKits] = useState([])
 
-  // Checking API via Fetch to setThoughts and then map the info:
   useEffect(() => {
     fetch(apiURL)
       .then((res) => res.json())
-      .then((json) => setKits(json));
-  }, [apiURL]);
-  console.log(kits);
+      .then((json) => setKits(json))
+  }, [apiURL])
+  console.log(kits)
 
   return (
-    <div>
+    <main>
       <section className="container-page">
-        <h2>Krislådor <FontAwesomeIcon icon={faArchive} size="1x" /></h2>
+        <h2>
+          Krislådor
+          <FontAwesomeIcon icon={faArchive} size="1x" />
+        </h2>
         <p>
           Att ha en krislåda hemma för sin hemberedskap är viktigt för att kunna
           möta eventuella krissituationer eller andra störningar som kan uppstå.
@@ -38,40 +36,32 @@ export const KitList = () => {
             Allt du behöver för att klara dig:
           </h1>
         </section>
-        {/* <h4>[sort on: MAT / UTRUSTNING]</h4> */}
-        <div className="kits-container">
+        <article className="kits-container">
           {kits.map((kit) => (
             <article className="kit-card-wide effect2" key={kit._id}>
               <p className="kit-name">{kit.name}</p>
               <p className="kit-description">{kit.description}</p>
               <section>
                 <p className="kit-details">
-                  För antal personer: {kit.for_persons}
+                  För antal personer:
+                  {kit.for_persons}
                 </p>
-                <p className="kit-details">För antal dagar: {kit.for_days}</p>
-                <p className="kit-details">Typ: {kit.category}</p>
-                <p className="kit-details">Pris: {kit.average_cost},-</p>
-
+                <p className="kit-details">
+                  För antal dagar: {kit.for_days}
+                </p>
+                <p className="kit-details">
+                  Typ: {kit.category}
+                </p>
+                <p className="kit-details">
+                  Pris: {kit.average_cost} ,- </p>
               </section>
-
-{/*               <Link className="kit-link" to={`kit/${kit._id}`}>
-                <button>Läs mer om innehållet här</button>
-              </Link> */}
-
               <Link className="btn kit-link" to={`kit/${kit._id}`}>
                 Läs mer om innehåll
               </Link>
-
-              {/*               <a
-              className="btn kit-link"
-              href="https://criseq.se/produkt-kategori/beredskapslada-krislada/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >Vad lådan innehåller</a> */}
             </article>
           ))}
-        </div>
+        </article>
       </section>
-    </div>
-  );
-};
+    </main>
+  )
+}

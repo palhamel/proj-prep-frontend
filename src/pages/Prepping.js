@@ -1,14 +1,15 @@
-import React from "react";
-// import "./start_style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
 
 export const Prepping = () => {
   return (
-    <div>
+    <main>
       <section className="container-page">
         <h2>
-          Prepping <FontAwesomeIcon icon={faFileAlt} size="1x" />
+          Prepping
+          {' '}
+          <FontAwesomeIcon icon={faFileAlt} size="1x" />
         </h2>
         <p>
           Att vara förberedd, ordet ”prepping” betyder ”förberedelse” och är
@@ -94,7 +95,8 @@ export const Prepping = () => {
           Till ett bostadsområde utan vatten kan vatten köras i tankbil och
           speciella hämtställen ordnas, vanligen med hjälp av brandförsvar eller
           gatukontor. Vattnet hämtas lättast i plastdunkar eller hinkar. Ha
-          helst en dunk med skruvlock och kran.{" "}
+          helst en dunk med skruvlock och kran.
+          {' '}
           <span className="text-highlight">
             Du kan själv ordna dricksvatten om du inte får det utkört! Använd
             sjövatten och vatten från friska brunnar, vattendrag och bäckar som
@@ -229,6 +231,6 @@ export const Prepping = () => {
           </a>
         </p>
       </section>
-    </div>
-  );
-};
+    </main>
+  )
+}
