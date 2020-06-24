@@ -12,7 +12,6 @@ export const Start = () => {
           {' '}
           <FontAwesomeIcon icon={faBolt} size="1x" />
         </h2>
-
         <p>
           Människan blir mer och mer utsatt och sårbar i samhället, den moderna
           infrastrukturen och teknikens framfart gör oss mer och mer beroende.
@@ -21,7 +20,6 @@ export const Start = () => {
           <span className="text-highlight">
             Vad händer när vi blir strömlösa, insnöade eller översvämmade?
           </span>
-
         </p>
 
         <section className="text-box-focus">
@@ -31,8 +29,9 @@ export const Start = () => {
           </h1>
         </section>
         <p>
-          Naturligtvis kan man aldrig vara helt förberedd på en kris eftersom vi inte säkert kan veta 
-          hur och när den kommer att uppstå eller vilka följder den får. Däremot går det att förbereda sig. 
+          Naturligtvis kan man aldrig vara helt förberedd på en kris
+          eftersom vi inte säkert kan veta hur och när den kommer att
+          uppstå eller vilka följder den får. Däremot går det att förbereda sig.
         </p>
         <p>
           Både individ och samhälle ska alltså vara förberedda på oväntade, större händelser.

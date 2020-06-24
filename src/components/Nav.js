@@ -58,7 +58,11 @@ const ContainerRight = styled.section`
   align-items: flex-start;
   width: auto;
   margin: 30px 0px 0px 0px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 5px;
+  @media (min-width: 668px) {
+    padding: 0px 0px 0px 20px;
+
+  }
 `
 const ContainerLeft = styled.section`
   display: flex;
