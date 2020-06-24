@@ -14,7 +14,7 @@ export const NewsText = () => {
 
   return (
     <main className="kits-container">
-      <h2>Nyheter från SVT Text-TV:</h2>
+      <h2>SVT Text-TV:</h2>
       {newsText.map((news) => (
         <article className="kit-card effect2" key={news.id}>
           <p className="kit-details">

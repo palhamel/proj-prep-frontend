@@ -20,6 +20,8 @@ export const Smhi = () => {
             target="_blank">
               SMHI.
           </a>
+        </p>
+        <p className="text-highlight">
           En av SMHI:s viktigaste uppgifter är att
           varna för oväder för att skydda liv och egendom.
         </p>

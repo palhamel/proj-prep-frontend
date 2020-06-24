@@ -154,8 +154,8 @@ export const Prepping = () => {
           kan du:
         </p>
         <ul className="list-text-items">
-          <li>bränna stearinljus eller fotogenlampa med veke</li>
-          <li>använda fotogenkamin eller gasolvärmeapparat</li>
+          <li>Bränna stearinljus eller fotogenlampa med veke</li>
+          <li>Använda fotogenkamin eller gasolvärmeapparat</li>
           <li>Vara nära varandra - varje människa avger 100W</li>
         </ul>
         <h1>Koloxidfara</h1>

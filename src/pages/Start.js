@@ -30,11 +30,12 @@ export const Start = () => {
             sätt att laga mat hemma.
           </h1>
         </section>
-
         <p>
-          Oavsett om du är en rutinerad prepper, en nyfiken nybörjare eller bara
-          vill vara lite förberedd så har vi ett brett sortiment av smarta
-          produkter som gör livet lite lättare om något oväntat händer.
+          Naturligtvis kan man aldrig vara helt förberedd på en kris eftersom vi inte säkert kan veta 
+          hur och när den kommer att uppstå eller vilka följder den får. Däremot går det att förbereda sig. 
+        </p>
+        <p>
+          Både individ och samhälle ska alltså vara förberedda på oväntade, större händelser.
         </p>
       </section>
     </main>

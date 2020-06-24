@@ -1,12 +1,9 @@
 import React from 'react'
-
-import './kitlist_style.css'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
-
 import { NewsText } from '../components/NewsText'
 import { NewsWorld } from '../components/NewsWorld'
+import './kitlist_style.css'
 
 export const NewsList = () => {
   return (
@@ -25,10 +22,16 @@ export const NewsList = () => {
         </p>
         <article className="kits-container">
           <p>
-            <span className="text-alert">
-              Att vara källkritisk innebär att värdera den information man tar
+          Att vara
+            <a
+              className="link-text-inline"
+              href="https://www.krisinformation.se/detta-gor-samhallet/mer-om-sveriges-krishanteringssystem/om-krisen-kommer/kallkritik"
+              rel="noopener noreferrer"
+              target="_blank">
+              källkritisk
+            </a>
+            innebär att värdera den information man tar
               del av.
-            </span>
             Det betyder dels att förstå att vissa källor har högre trovärdighet
             än andra, dels att vara medveten om att avsändare av information har
             ett syfte. Varför finns informationen?
@@ -39,8 +42,15 @@ export const NewsList = () => {
           </p>
           <p>
             I allmänhet litar vi på våra vänner.
-            Att dela information som inte är sann i sociala medier sprider
-            inte bara osanningen vidare, det ger dessutom informationen tyngd
+            Att dela information som inte är sann i
+            <a
+              className="link-text-inline"
+              href="https://www.krisinformation.se/detta-gor-samhallet/mer-om-sveriges-krishanteringssystem/om-krisen-kommer/om-sociala-medier-i-handelser-och-kriser"
+              rel="noopener noreferrer"
+              target="_blank">
+              sociala medier
+            </a> 
+            sprider inte bara osanningen vidare, det ger dessutom informationen tyngd
             genom att det är en vän som vidarebefordrar den.
             Det är lättare att vara kritisk mot information som sprids av
             okända.

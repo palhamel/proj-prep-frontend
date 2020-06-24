@@ -16,9 +16,9 @@ export const Covid19apiAll = () => {
       <section className="container-page">
         <h2>Covid-19 statistik</h2>
         <section className="kits-container">
-          <p>Data från alla länder som idag rapporterar till WHO. Uppdateras löpande.</p>
-          <h4>Källa: api.covid19api.com</h4>
-          <h1>Senaste statistiken</h1>
+          <p>Data från alla länder som idag rapporterar till WHO. Uppdateras löpande. Sorterade i bokstavsordning.</p>
+          <p className="kit-details-notes">Källa: api.covid19api.com</p>
+          <h1>Senaste datan:</h1>
 
           {covidStats.map((worldStats) => (
             <article className="kit-card effect2" key={worldStats.CountryCode}>

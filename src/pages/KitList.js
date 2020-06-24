@@ -22,7 +22,15 @@ export const KitList = () => {
           <FontAwesomeIcon icon={faArchive} size="1x" />
         </h2>
         <p>
-          Att ha en krislåda hemma för sin hemberedskap är viktigt för att kunna
+          Att ha en
+          <a
+            className="link-text-inline"
+            href="https://www.raddningstjansten.com/sidor/hem--fritid/krisberedskap/klara-dig-sjalv-vid-en-kris/krislada---checklista.html"
+            rel="noopener noreferrer"
+            target="_blank">
+            krislåda
+          </a> 
+          hemma för sin hemberedskap är viktigt för att kunna
           möta eventuella krissituationer eller andra störningar som kan uppstå.
           Det kan vara allt
           <span className="text-highlight">
@@ -31,7 +39,16 @@ export const KitList = () => {
           eller att det blivit förorenat.
         </p>
         <p>Förutsättningar och behov ser olika ut, exempelvis om man bor på landet eller i en stad, i hus eller lägenhet. Även om det finns vissa grundläggande saker som är bra att ha för de allra flesta, exempelvis mat som tål rumstemperatur och är lätt att tillaga, så måste alla utgå ifrån egna förutsättningar och behov. Finns det husdjur? Behöver någon daglig medicinering eller finns det småbarn i hushållet? Man kan gå ihop om vissa saker och låna av varandra.</p>
-        <p>Det minsta lilla man gjort för en bättre hemberedskap kommer att vara värdefullt den dagen något händer. Ju fler som har packat en krislåda desto bättre kommer din kommun och landet som helhet att klara en kris och desto större möjligheter har vi att hjälpa andra.</p>
+        <p>
+          Det minsta lilla man gjort för en bättre
+          <a
+            className="link-text-inline"
+            href="https://www.rodakorset.se/vad-vi-gor/kris-och-katastrof/krisberedskap/gor-en-krisplan/"
+            rel="noopener noreferrer"
+            target="_blank">
+            hemberedskap 
+          </a> 
+          kommer att vara värdefullt den dagen något händer. Ju fler som har packat en krislåda desto bättre kommer din kommun och landet som helhet att klara en kris och desto större möjligheter har vi att hjälpa andra.</p>
         <section className="text-box-focus">
           <h1>
             Allt du behöver för att klara dig:
