@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
-// import dayjs from "dayjs";
 import "../pages/kitlist_style.css";
 
-// List all posts from API:
 export const Covid19api = () => {
-  // URL to API as const:
   const apiURL = "https://api.covid19api.com/summary";
   const [covidStats, setCovidStats] = useState([]);
-  /* 
-  const stringDate = covidStats.last_update;
-  const maxStringLenght = stringDate;
-  console.log('check const', maxStringLenght) */
 
-  // Checking API via Fetch to setThoughts and then map the info:
   useEffect(() => {
     fetch(apiURL)
       .then((res) => res.json())
@@ -33,23 +25,3 @@ export const Covid19api = () => {
     </div>
   );
 };
-
-
-
-/*
-  return (
-    <div className="kits-container">
-      <h4>Covid-19 statistik - globalt & bekräftade fall:</h4>
-      <article className="kit-card effect2">
-        <p className="kit-description" >Currently infected: {covidStats.currently_infected}</p>
-        <p className="kit-details">Total cases: {covidStats.total_cases}</p>
-        <p className="kit-details">Death cases: {covidStats.death_cases}</p>
-        <p className="kit-details">Last update: {covidStats.last_update}</p>
-      </article>
-    </div>
-  );
-};
-
-
-
-*/
