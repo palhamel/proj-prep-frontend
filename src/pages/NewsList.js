@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import { NewsText } from '../components/NewsText'
-import { NewsWorld } from '../components/NewsWorld'
+// import { NewsWorld } from '../components/NewsWorld'
 import './kitlist_style.css'
 
 export const NewsList = () => {
@@ -57,7 +57,7 @@ export const NewsList = () => {
           </p>
           <section>
             <NewsText />
-            <NewsWorld />
+            {/* <NewsWorld /> */}
           </section>
         </article>
       </section>
