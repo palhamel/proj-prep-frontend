@@ -7,7 +7,7 @@ export const WeatherComp = () => {
   // API KEY AND LINK:
   const weatherOneDayApi = `https://api.openweathermap.org/data/2.5/weather?q=Stockholm,se&units=metric&APPID=${openWeatherApiKey}&lang=en`
   // const weatherForecastApi = `https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&units=metric&APPID=${openWeatherApiKey}&lang=en`;
-
+  //
   const [weatherDay, setweatherDay] = useState([])
 
   // First API - day weather
