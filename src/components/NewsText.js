@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import '../pages/kitlist_style.css'
 
 export const NewsText = () => {
-  const apiURL = 'http://api.texttv.nu/api/get/108-112?app=apiexempelsidan'
+  const apiURL = 'https://api.texttv.nu/api/get/108-112?app=apiexempelsidan'
   const [newsText, setNews] = useState([])
 
   useEffect(() => {

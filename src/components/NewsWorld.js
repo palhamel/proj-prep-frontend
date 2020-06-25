@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
 import '../pages/kitlist_style.css'
-import { newsApiKey } from '../apiKeys'
+// import { newsApiKey } from '../apiKeys'
+
+const apiKey = process.env.REACT_APP_API_KEY
 
 export const NewsWorld = () => {
-  const apiURL = `https://newsapi.org/v2/everything?q=COVID&sortBy=publishedAt&apiKey=${newsApiKey}&pageSize=5&page=1&sources=bbc-news&language=en`
+  const apiURL = `https://newsapi.org/v2/everything?q=COVID&sortBy=publishedAt&apiKey=${apiKey}&pageSize=5&page=1&sources=bbc-news&language=en`
   const [newsWorld, setNews] = useState([])
 
   useEffect(() => {
