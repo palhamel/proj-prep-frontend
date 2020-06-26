@@ -20,7 +20,7 @@ export const SmhiMessage = () => {
       <article className="kit-card-wide effect2">
         <p className="kit-description text-alert">
           <FontAwesomeIcon icon={faExclamationTriangle} size="sm" />
-          Uppdaterat:
+          Uppdaterat: 
           {dayjs(smhi.time_stamp).format('YYYY-MM-DD kl: hh:mm')}
         </p>
         <p className="smhi-message-text">{smhi.text}</p>
