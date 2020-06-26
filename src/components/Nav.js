@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import bgImage from '../images/bg_img-1440x400.png'
+import bgImage from '../images/bg_img-1440x400_sm.png'
 import logo from '../images/Prepper_Stash_vit.png'
 import './nav_style.css'
 
@@ -39,7 +39,9 @@ const Container = styled.section`
   padding: 10px;
   margin: 0px;
   height: 100px;
-  width: 700px;
+  width: auto;
+  min-width: 380px;
+  
   @media (min-width: 668px) {
     height: 150px;
     align-content: center;
