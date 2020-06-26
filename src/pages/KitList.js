@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArchive } from '@fortawesome/free-solid-svg-icons'
 
 export const KitList = () => {
-  const apiURL = 'http://localhost:8080/kits'
+  // const apiURL = 'http://localhost:8080/kits'
+  const apiURL = 'https://proj-final-prep-backend.herokuapp.com/kits'
   const [kits, setKits] = useState([])
 
   useEffect(() => {

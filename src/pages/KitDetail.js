@@ -7,7 +7,8 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 export const KitDetails = () => {
   const { kitId } = useParams()
-  const KIT_API_URL = `http://localhost:8080/kit/${kitId}`
+  // const KIT_API_URL = `http://localhost:8080/kit/${kitId}`
+  const KIT_API_URL = `https://proj-final-prep-backend.herokuapp.com/kit/${kitId}`
   const [kitDetail, setDetail] = useState([])
 
   useEffect(() => {
