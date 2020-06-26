@@ -12,7 +12,6 @@ Winter is coming. :)
 #### Tech used in Frontend: 
 - JavaScript ES6, HTML, CSS, React, React-router, styled components
 - dayjs, a minimalist JavaScript library for parsing dates.
-- VS Code, MongoDB Compass, Postman and Chrome.
 - A few APIs and RSS/XML feeds.
 - .env 
 - FontAwesome & Google fonts
