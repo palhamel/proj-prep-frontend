@@ -13,6 +13,7 @@ a.nav-text {
   margin: 0px 5px;
   border-bottom: 1px solid rgb(101, 218, 187);  
 }
+
 a.nav-text:hover {
   border-bottom: 2px solid #f2c086;
 }
@@ -67,13 +68,7 @@ h3 {
 
   }
   a.nav-text {
-
     font-size: 26px;
-    /* font-weight: 700; */
     margin: 0px 5px;
-
-
-    
   }
-
 }

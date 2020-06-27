@@ -1,16 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400;0,600;0,700;1,700&display=swap');
 /* insert overall font margins for text: */
-* + * {
-  /* margin: 1em 0 0; */
-}
-html {
-  /* width: auto; */
-  /* margin: 0px; */
-}
-/* main {
-  width: auto;
-} */
 
 body {
   margin: 0;
@@ -43,7 +33,6 @@ h1 {
   font-family: 'Cabin Sketch', sans-serif;
   color: rgb(0, 0, 0);
   margin: 0px 0px 0px 0px;
-
 }
 
 h2 {
@@ -51,15 +40,16 @@ h2 {
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
+
 h3 {
   font-size: 30px;
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
+
 h4 {
   color: rgb(0, 0, 0);
   margin: 10px 0px 10px 0px;
-
 }
 
 a {
@@ -101,8 +91,6 @@ a.link-text-inline {
 
 }
 a.link-text-inline:hover {
-  /* background-color: yellow; */
-  /* border-bottom: 5px solid rgb(101, 218, 187); */
   border-bottom: 1px solid #f2c086;
 }
 
@@ -124,34 +112,28 @@ a.link-text-inline:hover {
   h2 {
     font-size: 22px;
     font-weight: 700;
-
   }
+
   h3 {
     font-size: 30px;
-
-  }
-  h4 {
-
   }
 
   p {
     font-size: 16px;
-
   }
 
   h2 + p {
     font-size: 18px;
     line-height: 1.5;
   }
+
   a.link-text-inline {
     font-size: 16px;
     padding: 0px 5px 0px 5px;
     
   }
+
   .list-text-items {
     font-size: 14px;
   }
-
 }
-
-
