@@ -4,6 +4,7 @@ import styled from 'styled-components'
 // Navigation:
 import { Nav } from '../components/Nav'
 import { Footer } from '../components/Footer'
+import { NotFound } from '../components/NotFound'
 // Pages:
 import { Start } from './Start'
 import { KitList } from './KitList'
@@ -44,6 +45,7 @@ export const Home = () => {
           <Route path="/worldstat">
             <Covid19apiAll />
           </Route>
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </AppContainer>
