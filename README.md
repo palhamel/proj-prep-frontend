@@ -16,6 +16,7 @@ Winter is coming. :)
 - .env 
 - FontAwesome & Google fonts
 - VS Code, MongoDB Compass, Postman and Chrome.
+- Error handling for 404 and Netlify _redirects
 
 ## View it live - the website:
 https://proj-final-prepper.netlify.app/
