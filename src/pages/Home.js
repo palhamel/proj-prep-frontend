@@ -23,25 +23,25 @@ export const Home = () => {
           <Route path="/" exact>
             <Start />
           </Route>
-          <Route path="/kits" exact>
+          <Route path="/kits">
             <KitList />
           </Route>
-          <Route path="/kit/:kitId" exact>
+          <Route path="/kit/:kitId">
             <KitDetails />
           </Route>
-          <Route path="/news" exact>
+          <Route path="/news">
             <NewsList />
           </Route>
-          <Route path="/prepping" exact>
+          <Route path="/prepping">
             <Prepping />
           </Route>
-          <Route path="/who" exact>
+          <Route path="/who">
             <WhoInfo />
           </Route>
-          <Route path="/smhi" exact>
+          <Route path="/smhi">
             <Smhi />
           </Route>
-          <Route path="/worldstat" exact>
+          <Route path="/worldstat">
             <Covid19apiAll />
           </Route>
         </Switch>

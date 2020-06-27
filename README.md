@@ -20,7 +20,11 @@ Winter is coming. :)
 ## View it live - the website:
 https://proj-final-prepper.netlify.app/
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9479814e-184f-4613-a773-d1b5a7b5c422/deploy-status)](https://app.netlify.com/sites/proj-final-prepper/deploys)
+
 ## Backend info:
 https://github.com/palhamel/proj-final-prep-backend
 - Node.js, Express, MongoDB, MongoDB Atlas and JavaScript ES6
+
+
 

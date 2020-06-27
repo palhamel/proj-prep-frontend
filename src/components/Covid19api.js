@@ -10,7 +10,7 @@ export const Covid19api = () => {
       .then((res) => res.json())
       .then((json) => setCovidStats(json.Global));
   }, [apiURL]);
-  console.log("covid19api.com:", covidStats);
+  // console.log("covid19api.com:", covidStats);
 
   return (
     <div className="kits-container">
