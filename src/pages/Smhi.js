@@ -27,7 +27,7 @@ export const Smhi = () => {
         </p>
         <section className="kits-container">
           <SmhiMessage />
-          <SmhiAlerts />
+          {/* <SmhiAlerts /> */}
         </section>
       </section>
     </main>

@@ -37,10 +37,10 @@ export const SmhiAlerts = () => {
         </h4>
         <p>Vädervarning klass 3</p>
         <h4>
-        Mycket extremt väder väntas som kan innebära stor
-        fara för allmänheten och mycket stora störningar i viktiga
-        samhällsfunktioner. Allmänheten uppmanas att följa upp ny information på
-        internet, radio eller TV.
+          Mycket extremt väder väntas som kan innebära stor
+          fara för allmänheten och mycket stora störningar i viktiga
+          samhällsfunktioner. Allmänheten uppmanas att följa upp ny information på
+          internet, radio eller TV.
         </h4>
       </section>
       {smhi.map((alert) => (
