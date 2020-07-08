@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSunRain } from '@fortawesome/free-solid-svg-icons'
 import { SmhiMessage } from '../components/SmhiMessage'
 // import { SmhiAlerts } from '../components/SmhiAlerts'
+// New component after Smhi changes in API:
+import { SmhiAlertsV2 } from 'components/SmhiAlertsV2'
 import './kitlist_style.css'
 
 export const Smhi = () => {
@@ -28,6 +30,7 @@ export const Smhi = () => {
         <section className="kits-container">
           <SmhiMessage />
           {/* <SmhiAlerts /> */}
+          <SmhiAlertsV2 />
         </section>
       </section>
     </main>

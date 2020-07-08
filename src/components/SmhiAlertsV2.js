@@ -4,16 +4,16 @@ import '../pages/kitlist_style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
-export const SmhiAlerts = () => {
+export const SmhiAlertsV2 = () => {
   const apiURL = 'https://opendata-download-warnings.smhi.se/api/version/2/alerts.json'
   const [smhi, setSmhi] = useState([])
 
   useEffect(() => {
     fetch(apiURL)
       .then((res) => res.json())
-      .then((json) => setSmhi(json.alert))
+      .then((json) => setSmhi(json.alert.info))
   }, [apiURL])
-  console.log(smhi)
+  console.log('smhi alerts 2:', smhi)
   return (
     <main className="kits-container">
       <FontAwesomeIcon icon={faExclamationTriangle} size="4x" />
@@ -43,7 +43,7 @@ export const SmhiAlerts = () => {
           internet, radio eller TV.
         </h4>
       </section>
-      {smhi.map((alert) => (
+      {/* {smhi.map((alert) => (
         <article className="kit-card-wide effect2" key={alert.identifier}>
           <p className="kit-description text-alert">
             <FontAwesomeIcon icon={faExclamationTriangle} size="sm" />
@@ -62,7 +62,7 @@ export const SmhiAlerts = () => {
             </a>
           </section>
         </article>
-      ))}
+      ))} */}
     </main>
   )
 }
