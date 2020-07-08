@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSunRain } from '@fortawesome/free-solid-svg-icons'
 import { SmhiMessage } from '../components/SmhiMessage'
-import { SmhiAlerts } from '../components/SmhiAlerts'
+// import { SmhiAlerts } from '../components/SmhiAlerts'
 import './kitlist_style.css'
 
 export const Smhi = () => {
